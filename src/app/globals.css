@@ -1,26 +1,178 @@
 @import "tailwindcss";
 
 :root {
+  --navy: #1e2f5c;
+  --navy-deep: #152447;
+  --navy-light: #2a4278;
+  --cyan: #2db8e8;
+  --cyan-bright: #4dc9f5;
+  --cyan-soft: #e8f6fc;
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+  --gold: #e8a317;
+  --off-white: #f5f7fa;
+  --surface: #ffffff;
+  --muted: #5c6b82;
+  --border: #dde4ee;
+  --foreground: #152447;
   --background: #ffffff;
-  --foreground: #171717;
+  --shadow-card: 0 1px 2px rgb(21 36 71 / 0.04), 0 8px 24px rgb(21 36 71 / 0.06);
+  --shadow-card-hover: 0 4px 8px rgb(21 36 71 / 0.06), 0 16px 40px rgb(21 36 71 / 0.1);
+  --shadow-elevated: 0 8px 32px rgb(21 36 71 / 0.12);
 }
 
 @theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-light: var(--navy-light);
+  --color-cyan: var(--cyan);
+  --color-cyan-bright: var(--cyan-bright);
+  --color-cyan-soft: var(--cyan-soft);
+  --color-orange: var(--orange);
+  --color-orange-dark: var(--orange-dark);
+  --color-gold: var(--gold);
+  --color-off-white: var(--off-white);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--cyan) 35%, white);
+  color: var(--navy-deep);
+}
+
+/* Section rhythm helpers */
+.section-pad {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.pathway-bg {
+  background-image: radial-gradient(
+      circle at 20% 80%,
+      color-mix(in srgb, var(--cyan) 8%, transparent) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      color-mix(in srgb, var(--navy) 5%, transparent) 0%,
+      transparent 45%
+    );
+}
+
+.curve-to-light {
+  clip-path: ellipse(72% 100% at 50% 100%);
+}
+
+.curve-to-navy {
+  clip-path: ellipse(72% 100% at 50% 0%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.link-hover {
+  transition: color 0.2s ease;
+}
+
+.link-hover:hover {
+  color: var(--cyan);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+.animate-slide-in {
+  animation: slide-in-right 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stagger-1 {
+  animation-delay: 0.06s;
+}
+.stagger-2 {
+  animation-delay: 0.12s;
+}
+.stagger-3 {
+  animation-delay: 0.18s;
+}
+.stagger-4 {
+  animation-delay: 0.24s;
+}
+
+dialog::backdrop {
+  background: color-mix(in srgb, var(--navy-deep) 55%, transparent);
+  backdrop-filter: blur(4px);
 }
