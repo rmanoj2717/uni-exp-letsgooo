@@ -8,13 +8,14 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { CtaButton } from "@/components/cta/CtaButton";
 import { testPrepItems } from "@/lib/constants/test-prep";
+import { assetPath } from "@/lib/utils/asset-path";
 
 export const metadata: Metadata = {
   title: "Test Prep",
   description: "SAT, ACT, IELTS, and standardized test planning aligned with your university targets.",
 };
 
-const TEST_PREP_IMAGE = "/images/test-prep-student.jpg";
+const TEST_PREP_IMAGE = assetPath("/images/test-prep-student.jpg");
 
 export default function TestPrepPage() {
   return (

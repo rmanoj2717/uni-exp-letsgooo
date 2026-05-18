@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { credibilityPoints } from "@/lib/constants/stats";
+import { assetPath } from "@/lib/utils/asset-path";
 import { Container } from "@/components/ui/Container";
 
 export function ParentFriendly() {
@@ -32,7 +33,7 @@ export function ParentFriendly() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/70 shadow-[0_12px_40px_rgba(21,36,71,0.1)] md:rounded-3xl lg:aspect-[5/4]">
             <Image
-              src="/images/home-counseling-session.png"
+              src={assetPath("/images/home-counseling-session.png")}
               alt="Counsellor and student in a one-on-one admissions planning session"
               fill
               className="object-cover object-center"

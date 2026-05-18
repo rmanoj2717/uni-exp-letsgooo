@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/utils/asset-path";
 
 export type TeamMemberCardProps = {
   role: string;
@@ -17,7 +18,7 @@ export function TeamMemberCard({ role, image, name, bio }: TeamMemberCardProps) 
     >
       <div className="relative aspect-square overflow-hidden">
         <Image
-          src={image}
+          src={assetPath(image)}
           alt={name ?? role}
           fill
           className="object-cover object-top"

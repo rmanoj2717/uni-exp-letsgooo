@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { CtaButton } from "@/components/cta/CtaButton";
 import { MobileNav } from "./MobileNav";
 import { mainNav } from "@/lib/constants/navigation";
+import { assetPath } from "@/lib/utils/asset-path";
 import { cn } from "@/lib/utils/cn";
 
 export function SiteHeader() {
@@ -40,7 +41,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between gap-3 px-5 sm:px-6 lg:h-[4.75rem] lg:px-8">
         <Link href="/" className="relative flex shrink-0 items-center transition-opacity hover:opacity-90">
           <Image
-            src="/brand/logo.png"
+            src={assetPath("/brand/logo.png")}
             alt="UniExp Global"
             width={168}
             height={50}

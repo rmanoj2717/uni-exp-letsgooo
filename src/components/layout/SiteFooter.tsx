@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/utils/asset-path";
 import { PathwayLines } from "@/components/decorative/PathwayLines";
 import { SectionCurve } from "@/components/decorative/SectionCurve";
 import { contact, brand } from "@/lib/constants/contact";
@@ -15,7 +16,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
             <Image
-              src="/brand/logo.png"
+              src={assetPath("/brand/logo.png")}
               alt="UniExp Global"
               width={180}
               height={54}
