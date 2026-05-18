@@ -37,10 +37,25 @@ export type FieldOfStudy = {
 export type PricingTier = {
   id: string;
   name: string;
+  nameSuffix?: string;
   price: number;
   popular?: boolean;
+  badge?: string;
   touchpoints: string;
-  features: string[];
+  bestFor: string;
+  includes: string[];
+};
+
+export type PricingComparisonRow = {
+  label: string;
+  basic: boolean | string;
+  standard: boolean | string;
+  premium: boolean | string;
+};
+
+export type PricingFaq = {
+  question: string;
+  answer: string;
 };
 
 export type ProcessStep = {
