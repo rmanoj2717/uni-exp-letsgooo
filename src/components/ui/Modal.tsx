@@ -8,11 +8,13 @@ export function Modal({
   onClose,
   title,
   children,
+  size = "md",
 }: {
   open: boolean;
   onClose: () => void;
   title: string;
   children: React.ReactNode;
+  size?: "md" | "lg";
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -24,24 +26,27 @@ export function Modal({
   }, [open]);
 
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && open) onClose();
-    };
-    window.addEventListener("keydown", handleEscape);
-    return () => window.removeEventListener("keydown", handleEscape);
-  }, [open, onClose]);
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const handleDialogClose = () => onClose();
+    dialog.addEventListener("close", handleDialogClose);
+    return () => dialog.removeEventListener("close", handleDialogClose);
+  }, [onClose]);
 
   return (
     <dialog
       ref={dialogRef}
       className={cn(
-        "fixed inset-0 z-50 m-auto max-h-[min(90vh,720px)] w-[calc(100%-1.5rem)] max-w-lg overflow-hidden rounded-3xl border border-border/60 bg-surface p-0 shadow-[var(--shadow-elevated)]",
+        "fixed inset-0 z-50 m-auto hidden max-h-[min(92vh,840px)] w-[calc(100%-1rem)] flex-col overflow-hidden rounded-2xl border border-border/60 bg-surface p-0 shadow-[var(--shadow-elevated)] open:flex sm:w-[calc(100%-1.5rem)] sm:rounded-3xl",
+        size === "md" && "max-w-lg",
+        size === "lg" && "max-w-2xl",
         "open:animate-fade-in",
       )}
       onClose={onClose}
       aria-labelledby="modal-title"
     >
-      <div className="border-b border-border/80 bg-off-white/40 px-6 py-5 sm:px-7">
+      <div className="border-b border-border/80 bg-off-white/40 px-5 py-4 sm:px-7 sm:py-5">
         <div className="flex items-start justify-between gap-4">
           <h2 id="modal-title" className="font-display text-xl font-bold leading-snug text-navy sm:text-2xl">
             {title}
@@ -63,7 +68,7 @@ export function Modal({
           </button>
         </div>
       </div>
-      <div className="overflow-y-auto px-6 py-6 sm:px-7 sm:py-7">{children}</div>
+      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5 sm:px-7 sm:py-7">{children}</div>
     </dialog>
   );
 }

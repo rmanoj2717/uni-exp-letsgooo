@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { CtaButton } from "@/components/cta/CtaButton";
 import { mainNav } from "@/lib/constants/navigation";
 import { cn } from "@/lib/utils/cn";
+import { isNavActive } from "@/lib/utils/nav";
 
 export function MobileNav({
   open,
@@ -18,7 +19,7 @@ export function MobileNav({
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 xl:hidden">
+    <div className="fixed inset-0 z-50 lg:hidden">
       <div
         className="absolute inset-0 bg-navy-deep/60 backdrop-blur-md animate-fade-in"
         onClick={onClose}
@@ -54,7 +55,7 @@ export function MobileNav({
               onClick={onClose}
               className={cn(
                 "mb-1 block rounded-xl px-4 py-3.5 text-base font-medium transition-colors",
-                pathname === item.href
+                isNavActive(pathname, item.href)
                   ? "bg-cyan-soft text-navy"
                   : "text-muted hover:bg-off-white hover:text-navy",
               )}

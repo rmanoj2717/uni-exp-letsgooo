@@ -1,6 +1,7 @@
 import { SectionCurve } from "@/components/decorative/SectionCurve";
 import { PathwayLines } from "@/components/decorative/PathwayLines";
 import { Container } from "@/components/ui/Container";
+import { destinationsMarketingCopy } from "@/lib/constants/study-destinations";
 
 export function DestinationsHero() {
   return (
@@ -41,14 +42,15 @@ export function DestinationsHero() {
           Global destinations
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-          Fit-first university recommendations across top education hubs worldwide.
+          University planning built around goals, budget, and outcomes across{" "}
+          {destinationsMarketingCopy}
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg">
           We help families choose destinations based on academic fit, budget, career goals, and
           long-term outcomes — not trends alone.
         </p>
         <div className="mt-7 flex flex-wrap gap-2">
-          {["Fit-led shortlists", "Scholarship-aware planning", "Long-term outcomes"].map((chip) => (
+          {["Balanced shortlists", "Scholarship-aware planning", "Long-term outcomes"].map((chip) => (
             <span
               key={chip}
               className="rounded-full border border-white/12 bg-white/[0.06] px-3 py-1.5 text-xs font-medium text-white/75 sm:text-sm"

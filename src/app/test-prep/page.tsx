@@ -7,22 +7,27 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { CtaButton } from "@/components/cta/CtaButton";
-import { testPrepItems } from "@/lib/constants/test-prep";
+import {
+  testPrepItems,
+  testPrepOverviewLine,
+  testPrepPackageNote,
+} from "@/lib/constants/test-prep";
 import { assetPath } from "@/lib/utils/asset-path";
 
 export const metadata: Metadata = {
   title: "Test Prep",
-  description: "SAT, ACT, IELTS, and standardized test planning aligned with your university targets.",
+  description:
+    "SAT, ACT, IELTS, and TOEFL test planning and personalized 1:1 preparation support aligned with your university targets.",
 };
 
-const TEST_PREP_IMAGE = assetPath("/images/test-prep-student.jpg");
+const TEST_PREP_IMAGE = assetPath("/images/focused_study_session_in_a_modern_workspace.png");
 
 export default function TestPrepPage() {
   return (
     <>
       <PageHeader
         title="Test preparation support"
-        subtitle="Structured prep plans aligned with your target universities and application timeline."
+        subtitle={testPrepOverviewLine}
       />
 
       <section className="py-12 md:py-14">
@@ -35,9 +40,11 @@ export default function TestPrepPage() {
                   Tests that fit your pathway
                 </h2>
                 <p className="mt-4 leading-relaxed text-muted">
-                  We help you choose the right tests, set realistic score targets, and build a prep
-                  schedule that works alongside school and applications — not against them.
+                  {testPrepOverviewLine} We help you choose the right exams, set realistic score
+                  targets, and build a prep schedule that works alongside school and applications —
+                  not against them.
                 </p>
+                <p className="mt-4 leading-relaxed text-muted">{testPrepPackageNote}</p>
               </div>
 
               <div className="mt-8 space-y-5">
@@ -60,9 +67,9 @@ export default function TestPrepPage() {
               <div className="relative mx-auto aspect-[4/5] max-h-[min(520px,70vh)] w-full max-w-md overflow-hidden rounded-2xl border border-border/70 shadow-[0_12px_40px_rgba(21,36,71,0.1)] md:rounded-3xl lg:max-w-none">
                 <Image
                   src={TEST_PREP_IMAGE}
-                  alt="Student studying for standardized tests with laptop and textbooks in a library"
+                  alt="Student studying for admissions tests in a modern academic workspace"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-[center_42%]"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   priority
                 />
@@ -106,7 +113,7 @@ export default function TestPrepPage() {
               a score can strengthen the application.
             </p>
             <div className="mt-7 flex justify-center">
-              <CtaButton source="test-prep-plan" size="lg" label="Build My Test Plan" />
+              <CtaButton source="test-prep-plan" size="lg" />
             </div>
           </div>
         </Container>

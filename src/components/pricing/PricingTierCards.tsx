@@ -30,7 +30,7 @@ export function PricingTierCards() {
                 )}
               </div>
 
-              <p className="mt-3 font-display text-3xl font-bold tracking-tight text-navy md:text-4xl">
+              <p className="mt-3 font-display text-2xl font-bold tracking-tight text-navy sm:text-3xl md:text-4xl">
                 {formatINR(tier.price)}
               </p>
               <p className="mt-2 text-sm font-medium text-cyan">{tier.touchpoints}</p>
@@ -49,7 +49,7 @@ export function PricingTierCards() {
                 <ul className="mt-3 space-y-2.5">
                   {tier.includes.map((item) => (
                     <li key={item} className="flex gap-2.5 text-sm leading-snug text-muted">
-                      <span className="mt-0.5 shrink-0 text-orange" aria-hidden>
+                      <span className="mt-0.5 shrink-0 text-cyan" aria-hidden>
                         ✓
                       </span>
                       {item}

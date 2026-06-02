@@ -1,15 +1,18 @@
 import Image from "next/image";
 import { assetPath } from "@/lib/utils/asset-path";
+import { cn } from "@/lib/utils/cn";
 
 export type TeamMemberCardProps = {
   role: string;
-  image: string;
+  image?: string;
+  initials?: string;
   name?: string;
   bio?: string;
 };
 
-export function TeamMemberCard({ role, image, name, bio }: TeamMemberCardProps) {
+export function TeamMemberCard({ role, image, initials, name, bio }: TeamMemberCardProps) {
   const hasProfile = Boolean(name && bio);
+  const showInitials = !image && initials;
 
   return (
     <figure
@@ -17,13 +20,27 @@ export function TeamMemberCard({ role, image, name, bio }: TeamMemberCardProps) 
       tabIndex={hasProfile ? 0 : undefined}
     >
       <div className="relative aspect-square overflow-hidden">
-        <Image
-          src={assetPath(image)}
-          alt={name ?? role}
-          fill
-          className="object-cover object-top"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
+        {image ? (
+          <Image
+            src={assetPath(image)}
+            alt={name ?? role}
+            fill
+            className="object-cover object-top"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : showInitials ? (
+          <div
+            className={cn(
+              "flex h-full w-full flex-col items-center justify-center",
+              "bg-gradient-to-br from-cyan-soft/90 via-off-white to-surface",
+            )}
+            aria-hidden
+          >
+            <span className="flex h-20 w-20 items-center justify-center rounded-full border border-cyan/20 bg-surface/90 font-display text-2xl font-bold tracking-tight text-cyan shadow-[0_4px_16px_rgba(21,36,71,0.08)] sm:h-24 sm:w-24 sm:text-3xl">
+              {initials}
+            </span>
+          </div>
+        ) : null}
 
         {hasProfile && (
           <>
@@ -48,7 +65,7 @@ export function TeamMemberCard({ role, image, name, bio }: TeamMemberCardProps) 
         </div>
       )}
 
-      <figcaption className="border-t border-border/70 bg-surface px-4 py-3 text-center text-sm font-semibold text-navy">
+      <figcaption className="border-t border-border/70 bg-surface px-4 py-3 text-center text-xs font-semibold leading-snug text-navy sm:text-sm">
         {role}
       </figcaption>
     </figure>

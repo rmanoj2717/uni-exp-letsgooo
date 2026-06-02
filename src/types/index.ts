@@ -14,8 +14,12 @@ export type DestinationTheme =
   | "australia"
   | "germany"
   | "france"
+  | "netherlands"
+  | "japan"
   | "uae"
-  | "singapore";
+  | "singapore"
+  | "ireland"
+  | "newzealand";
 
 export type Destination = {
   id: string;
@@ -26,6 +30,8 @@ export type Destination = {
   considerations: string;
   visualLabel: string;
   theme: DestinationTheme;
+  /** Optional atmosphere photo for featured cards (path under /images/) */
+  image?: string;
 };
 
 export type FieldOfStudy = {
@@ -41,6 +47,7 @@ export type PricingTier = {
   price: number;
   popular?: boolean;
   badge?: string;
+  summary?: string;
   touchpoints: string;
   bestFor: string;
   includes: string[];
@@ -65,6 +72,27 @@ export type ProcessStep = {
   description: string;
   summary: string;
   bullets: string[];
+};
+
+export type AdmissionsJourneyStep = {
+  step: number;
+  title: string;
+  description: string;
+  tag: string;
+};
+
+export type PhaseFamilySummary = {
+  headline: string;
+  points: string[];
+};
+
+export type AdmissionsJourneyPhase = {
+  id: string;
+  phase: number;
+  title: string;
+  description: string;
+  steps: AdmissionsJourneyStep[];
+  familySummary: PhaseFamilySummary;
 };
 
 export type QuizQuestion = {

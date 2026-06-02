@@ -1,4 +1,4 @@
-import { trustStats } from "@/lib/constants/stats";
+import { homepageStats } from "@/lib/constants/stats";
 import { cn } from "@/lib/utils/cn";
 
 export function StatStrip({ dark = false }: { dark?: boolean }) {
@@ -10,7 +10,7 @@ export function StatStrip({ dark = false }: { dark?: boolean }) {
           : "grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-10"
       }
     >
-      {trustStats.map((stat, i) => (
+      {homepageStats.map((stat, i) => (
         <div
           key={stat.label}
           className={cn(

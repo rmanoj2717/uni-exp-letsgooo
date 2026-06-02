@@ -58,19 +58,36 @@ export function SiteFooter() {
             <h3 className="eyebrow text-cyan-bright">Contact</h3>
             <ul className="mt-5 space-y-3 text-sm">
               <li>
+                <span className="text-white/50">{contact.india.label}: </span>
                 <a
-                  href={`mailto:${contact.email}`}
+                  href={contact.india.phoneHref}
                   className="text-white/75 transition-colors duration-200 hover:text-white"
                 >
-                  {contact.email}
+                  {contact.india.phone}
                 </a>
               </li>
               <li>
+                <span className="text-white/50">{contact.usa.label}: </span>
                 <a
-                  href={contact.phoneHref}
+                  href={contact.usa.phoneHref}
                   className="text-white/75 transition-colors duration-200 hover:text-white"
                 >
-                  {contact.phone}
+                  {contact.usa.phone}
+                </a>
+              </li>
+              <li>
+                <span className="block text-white/50">Email</span>
+                <a
+                  href={contact.emailHref}
+                  className="mt-1 block text-white/75 transition-colors duration-200 hover:text-white"
+                >
+                  {contact.email}
+                </a>
+                <a
+                  href={contact.emailSecondaryHref}
+                  className="mt-1 block text-white/75 transition-colors duration-200 hover:text-white"
+                >
+                  {contact.emailSecondary}
                 </a>
               </li>
               <li>

@@ -172,6 +172,10 @@ body {
   animation-delay: 0.24s;
 }
 
+dialog:not([open]) {
+  display: none !important;
+}
+
 dialog::backdrop {
   background: color-mix(in srgb, var(--navy-deep) 55%, transparent);
   backdrop-filter: blur(4px);

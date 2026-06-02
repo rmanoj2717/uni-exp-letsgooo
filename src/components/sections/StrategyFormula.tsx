@@ -39,7 +39,7 @@ function BestFitStrategyPreview() {
     <aside className="flex h-full flex-col rounded-2xl border border-border/70 bg-surface p-5 shadow-[0_8px_32px_rgba(21,36,71,0.07)] md:rounded-3xl md:p-6 lg:sticky lg:top-24">
       <div className="mb-3 h-0.5 w-10 rounded-full bg-cyan" aria-hidden />
       <h3 className="font-display text-xl font-bold text-navy md:text-[1.35rem]">
-        Best-Fit Strategy Preview
+        Admissions Roadmap Preview
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-muted">
         Built around profile, goals, budget, and long-term outcomes.
@@ -107,8 +107,8 @@ export function StrategyFormula() {
               How we build your best-fit strategy
             </h2>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted md:text-xl">
-              Student Profile + Admissions Data + Counsellor Insight = Best-Fit University
-              Strategy
+              Student Profile + Admissions Data + Counsellor Insight = A plan your family
+              can trust
             </p>
             <div className="mt-6 h-1 w-12 rounded-full bg-cyan" aria-hidden />
 
@@ -126,7 +126,7 @@ export function StrategyFormula() {
               </span>
               <span className="px-1 text-cyan">=</span>
               <span className="rounded-xl bg-navy px-4 py-2.5 text-white shadow-[var(--shadow-card)]">
-                Best-Fit Strategy
+                Clear Admissions Roadmap
               </span>
             </div>
 

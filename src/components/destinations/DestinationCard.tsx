@@ -1,6 +1,8 @@
+import Image from "next/image";
 import type { Destination } from "@/types";
 import { Badge } from "@/components/ui/Badge";
 import { CountryFlagBadge, DestinationAccentStrip } from "./CountryFlag";
+import { assetPath } from "@/lib/utils/asset-path";
 import { cn } from "@/lib/utils/cn";
 
 export function DestinationCard({
@@ -16,6 +18,21 @@ export function DestinationCard({
         "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-off-white via-surface to-off-white shadow-[0_4px_24px_rgba(21,36,71,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:shadow-[0_10px_36px_rgba(21,36,71,0.09)] md:rounded-3xl",
       )}
     >
+      {destination.image && (
+        <div className="relative aspect-[16/9] w-full overflow-hidden">
+          <Image
+            src={assetPath(destination.image)}
+            alt={destination.visualLabel}
+            fill
+            className="object-cover object-center saturate-[0.92] brightness-[0.97]"
+            sizes={featured ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 640px) 100vw, 33vw"}
+          />
+          <div
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface/90 via-surface/20 to-transparent"
+            aria-hidden
+          />
+        </div>
+      )}
       <DestinationAccentStrip theme={destination.theme} />
       <div
         className={cn(

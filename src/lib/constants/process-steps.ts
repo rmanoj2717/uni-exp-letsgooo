@@ -22,7 +22,7 @@ export const processSteps: ProcessStep[] = [
     summary:
       "Profile-led planning with data-driven shortlisting and a personalized roadmap.",
     description:
-      "Based on the student's profile, we create a clear admissions strategy with best-fit universities, reach/match/safety options, testing needs, scholarship possibilities, and application milestones. The goal is to turn a confusing process into a structured roadmap.",
+      "Based on the student's profile, we create a clear admissions strategy with balanced university recommendations, reach/match/safety options, testing needs, scholarship possibilities, and application milestones. The goal is to turn a confusing process into a structured roadmap.",
     bullets: [
       "Personalized university shortlist",
       "Reach, match, and safety planning",

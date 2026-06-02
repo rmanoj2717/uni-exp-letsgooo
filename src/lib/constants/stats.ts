@@ -1,13 +1,15 @@
-export const trustStats = [
-  { value: "100+", label: "Students guided" },
-  { value: "Top global", label: "University admits" },
-  { value: "Fit-first", label: "Recommendations" },
-  { value: "End-to-end", label: "Family support" },
+export const homepageStats = [
+  { value: "100+", label: "Students Guided" },
+  { value: "Top Global", label: "University Admits" },
+  { value: "Personalized", label: "Admissions Planning" },
+  { value: "End-to-End", label: "Family Support" },
 ] as const;
 
+export const trustStats = homepageStats;
+
 export const credibilityPoints = [
-  "Parent-friendly support",
-  "Profile-led strategy",
+  "Guidance for students and parents",
+  "Profile-led planning",
   "Data-driven shortlisting",
   "Personalized roadmap",
   "Holistic profile building",

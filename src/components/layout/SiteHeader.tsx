@@ -9,6 +9,7 @@ import { MobileNav } from "./MobileNav";
 import { mainNav } from "@/lib/constants/navigation";
 import { assetPath } from "@/lib/utils/asset-path";
 import { cn } from "@/lib/utils/cn";
+import { isNavActive } from "@/lib/utils/nav";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -50,15 +51,15 @@ export function SiteHeader() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Main">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Main">
           {mainNav.map((item) => {
-            const active = pathname === item.href;
+            const active = isNavActive(pathname, item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative rounded-lg px-3 py-2 text-[0.8125rem] font-medium tracking-wide transition-colors duration-200",
+                  "relative rounded-lg px-2.5 py-2 text-[14px] font-medium tracking-wide transition-colors duration-200 xl:px-3.5 xl:text-[15px]",
                   active
                     ? "bg-cyan-soft text-navy"
                     : "text-muted hover:bg-off-white hover:text-navy",
@@ -78,7 +79,7 @@ export function SiteHeader() {
           />
           <button
             type="button"
-            className="inline-flex rounded-xl border border-border/80 p-2.5 text-navy transition-colors hover:border-cyan/40 hover:bg-cyan-soft/50 xl:hidden"
+            className="inline-flex rounded-xl border border-border/80 p-2.5 text-navy transition-colors hover:border-cyan/40 hover:bg-cyan-soft/50 lg:hidden"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
             aria-expanded={mobileOpen}

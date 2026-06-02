@@ -7,21 +7,23 @@ const planPreviews = [
   {
     id: "basic",
     name: "Basic",
-    description: "Focused monthly guidance for early planning or targeted support.",
-    bestFor: "Early exploration or specific questions.",
+    description:
+      "Focused guidance for early direction, profile review, and university shortlisting.",
+    bestFor: "Families starting the admissions journey.",
   },
   {
     id: "standard",
     name: "Standard",
-    description: "Structured support for students actively preparing applications.",
-    bestFor: "Shortlisting, essays, and application planning.",
+    description:
+      "Comprehensive admissions counselling with 25 hours of support and structured application guidance.",
+    bestFor: "Shortlisting, essays, scholarships, and application tracking.",
   },
   {
     id: "premium",
     name: "Premium",
     description:
-      "High-touch counselling for deeper profile-building and frequent guidance.",
-    bestFor: "End-to-end family support.",
+      "Full admissions counselling with coordinated 1:1 preparation for IELTS/TOEFL and SAT/ACT.",
+    bestFor: "Coordinated admissions and IELTS/TOEFL or SAT/ACT preparation.",
   },
 ] as const;
 
@@ -30,7 +32,7 @@ export function PricingTeaser() {
     <Section
       eyebrow="Investment"
       title="Plans built around your level of support"
-      subtitle="Choose focused guidance, structured application support, or high-touch end-to-end counselling based on where your student is in the journey."
+      subtitle="Choose focused guidance, comprehensive admissions counselling, or Standard plus personalized 1:1 test prep—based on where your student is in the journey."
       className="!py-11 md:!py-12 [&_header]:!mb-5 md:[&_header]:!mb-6"
     >
       <p className="mb-6 max-w-2xl text-sm text-muted md:mb-7">

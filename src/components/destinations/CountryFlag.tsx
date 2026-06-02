@@ -8,8 +8,12 @@ const accentStrip: Record<DestinationTheme, string> = {
   australia: "from-[#012169]/55 via-[#e4002b]/35 to-transparent",
   germany: "from-[#000000]/50 via-[#dd0000]/45 to-[#ffce00]/40",
   france: "from-[#002395]/55 via-[#ffffff]/25 to-[#ed2939]/45",
+  netherlands: "from-[#ae1c28]/55 via-[#ffffff]/25 to-[#21468b]/45",
+  japan: "from-[#ffffff]/30 via-[#bc002d]/45 to-transparent",
   uae: "from-[#00732f]/50 via-[#ffffff]/20 to-[#ff0000]/45",
   singapore: "from-[#ed2939]/55 via-[#ffffff]/25 to-transparent",
+  ireland: "from-[#169b62]/50 via-[#ffffff]/25 to-[#ff883e]/40",
+  newzealand: "from-[#00247d]/55 via-[#ffffff]/20 to-[#cc142b]/45",
 };
 
 function FlagSvg({ theme, className }: { theme: DestinationTheme; className?: string }) {
@@ -68,6 +72,21 @@ function FlagSvg({ theme, className }: { theme: DestinationTheme; className?: st
           <rect x="18.67" width="9.33" height="20" fill="#ed2939" />
         </svg>
       );
+    case "netherlands":
+      return (
+        <svg viewBox="0 0 28 20" className={className} aria-hidden>
+          <rect width="28" height="6.67" fill="#ae1c28" />
+          <rect y="6.67" width="28" height="6.66" fill="#fff" />
+          <rect y="13.33" width="28" height="6.67" fill="#21468b" />
+        </svg>
+      );
+    case "japan":
+      return (
+        <svg viewBox="0 0 28 20" className={className} aria-hidden>
+          <rect width="28" height="20" fill="#fff" />
+          <circle cx="14" cy="10" r="5" fill="#bc002d" />
+        </svg>
+      );
     case "uae":
       return (
         <svg viewBox="0 0 28 20" className={className} aria-hidden>
@@ -85,6 +104,27 @@ function FlagSvg({ theme, className }: { theme: DestinationTheme; className?: st
           <circle cx="8" cy="7" r="3" fill="#fff" />
           <circle cx="9" cy="7" r="2.2" fill="#ed2939" />
           <circle cx="11.5" cy="7" r="0.7" fill="#fff" />
+        </svg>
+      );
+    case "ireland":
+      return (
+        <svg viewBox="0 0 28 20" className={className} aria-hidden>
+          <rect width="11" height="20" fill="#169b62" />
+          <rect x="11" width="6" height="20" fill="#fff" />
+          <rect x="17" width="11" height="20" fill="#ff883e" />
+        </svg>
+      );
+    case "newzealand":
+      return (
+        <svg viewBox="0 0 28 20" className={className} aria-hidden>
+          <rect width="28" height="20" fill="#00247d" />
+          <rect width="12" height="10" fill="#012169" />
+          <path d="M0 0 L12 10 M12 0 L0 10" stroke="#fff" strokeWidth="1.2" />
+          <path d="M0 0 L12 10 M12 0 L0 10" stroke="#c8102e" strokeWidth="0.6" />
+          <circle cx="20" cy="6" r="1" fill="#fff" />
+          <circle cx="23" cy="9" r="0.8" fill="#fff" />
+          <circle cx="21" cy="12" r="0.9" fill="#fff" />
+          <circle cx="17" cy="10" r="0.7" fill="#fff" />
         </svg>
       );
     default:

@@ -18,7 +18,7 @@ export const services: Service[] = [
   {
     id: "shortlisting",
     title: "University Shortlisting",
-    summary: "Data-driven, fit-first university lists aligned with your profile and ambitions.",
+    summary: "Data-driven, profile-led university lists aligned with your profile and ambitions.",
     description:
       "We build a balanced university list based on academic fit, career goals, budget, location preferences, and long-term value. Families receive reach, match, and safety options so they can make decisions with more clarity and confidence.",
     helpWith: [
@@ -96,12 +96,13 @@ export const services: Service[] = [
   {
     id: "test-prep",
     title: "Test Preparation Support",
-    summary: "SAT, ACT, IELTS, and more — structured prep aligned with your target schools.",
+    summary:
+      "SAT, ACT, IELTS, and TOEFL planning in Standard; personalized 1:1 prep in Premium.",
     description:
-      "We help students understand which tests matter for their target universities and when to take them. Test prep should support the admissions timeline instead of becoming a separate source of stress.",
+      "Standard includes test planning for SAT, ACT, IELTS, and TOEFL as part of admissions counselling. Premium adds 20 hours of personalized 1:1 preparation support for IELTS/TOEFL and SAT/ACT, aligned with each student's applications and timeline. We help families choose the right exams, set realistic goals, and schedule prep without adding unnecessary stress.",
     helpWith: [
-      "SAT, ACT, IELTS, TOEFL, GRE, or GMAT planning",
-      "Score goals and retake strategy",
+      "SAT, ACT, IELTS, and TOEFL planning (Standard)",
+      "Personalized 1:1 IELTS/TOEFL and SAT/ACT prep (Premium)",
       "Test timelines connected to applications",
     ],
     icon: "test",

@@ -10,7 +10,7 @@ import { destinations, featuredDestinationIds } from "@/lib/constants/destinatio
 export const metadata: Metadata = {
   title: "Destinations",
   description:
-    "Study abroad in the USA, UK, Canada, Australia, Germany, France, UAE, Singapore — and more.",
+    "Study abroad across the USA, UK, Canada, Australia, Germany, France, Netherlands, Japan, UAE, Singapore, Ireland, New Zealand, and more.",
 };
 
 const featuredDestinations = destinations.filter((d) =>

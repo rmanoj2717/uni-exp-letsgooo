@@ -7,6 +7,10 @@ export function TestingPlanSection() {
       <h3 className="font-display text-lg font-bold text-navy md:text-xl">
         How we build your testing plan
       </h3>
+      <p className="mt-2 text-sm leading-relaxed text-muted">
+        Planning across SAT, ACT, IELTS, TOEFL, GRE, and GMAT — timed to your university list and
+        application deadlines.
+      </p>
       <ul className="mt-5 space-y-4">
         {testingPlanPoints.map((point, index) => (
           <li key={point.title} className="flex gap-3">

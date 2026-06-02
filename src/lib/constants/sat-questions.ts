@@ -5,9 +5,9 @@ export const satQuestions: QuizQuestion[] = [
     id: "q1",
     category: "reading",
     passage:
-      "The counsellor emphasized that fit-first recommendations consider a student's long-term goals, not just rankings.",
+      "The counsellor emphasized that profile-led recommendations consider a student's long-term goals, not just rankings.",
     question:
-      "As used in the passage, \"fit-first\" most nearly means prioritizing universities that —",
+      "As used in the passage, \"profile-led\" most nearly means prioritizing universities that —",
     options: [
       "have the highest global rankings",
       "align with the student's goals and profile",

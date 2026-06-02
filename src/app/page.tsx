@@ -1,5 +1,6 @@
 import { DestinationsPreview } from "@/components/sections/DestinationsPreview";
 import { EthicsBanner } from "@/components/sections/EthicsBanner";
+import { FamilyFeedback } from "@/components/sections/FamilyFeedback";
 import { Hero } from "@/components/sections/Hero";
 import { PageCtaBand } from "@/components/sections/PageCtaBand";
 import { ParentFriendly } from "@/components/sections/ParentFriendly";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Hero />
       <EthicsBanner />
       <StrategyFormula />
+      <FamilyFeedback />
       <ServicesPreview />
       <ProcessPreview />
       <DestinationsPreview />

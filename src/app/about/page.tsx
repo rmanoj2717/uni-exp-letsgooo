@@ -13,25 +13,55 @@ export const metadata: Metadata = {
     "UniExp Global — your success partner in top global university admissions.",
 };
 
-const team = [
+const team: {
+  id: string;
+  role: string;
+  name: string;
+  bio: string;
+  image?: string;
+  initials?: string;
+}[] = [
   {
-    role: "Admissions Strategist",
-    image: "/images/team-admissions-strategist.png",
-    name: "Kiran Kumar Yellugari",
-    bio: "With over 18+ years of experience as an entrepreneur, intrapreneur, investor, and mentor, Kiran has worked extensively across strategy, consulting, and business development.",
+    id: "raahul",
+    role: "Cofounder & CEO",
+    image: "/images/team-raahul-nair.png",
+    name: "Raahul Nair",
+    bio: "Raahul leads UniExp Global as Cofounder & CEO, guiding strategic growth and operational development to expand access to international education through personalized guidance and mentorship. With a background spanning entrepreneurship, technology, and business development, he brings a practical, execution-driven approach to student-focused initiatives.",
   },
   {
-    role: "Essay Specialist",
+    id: "kiran",
+    role: "Cofounder, Director - Business Development & Partnerships",
+    image: "/images/team-admissions-strategist.png",
+    name: "Kiran Kumar Yellugari",
+    bio: "With over 18+ years of experience as an entrepreneur, intrapreneur, investor, and mentor, Kiran has worked extensively across strategy, consulting, and business development. He brings a strong focus on partnerships, growth, and long-term value creation to UniExp Global.",
+  },
+  {
+    id: "naveen",
+    role: "Cofounder, Director - Marketing, Operations & Student Success",
     image: "/images/team-essay-specialist.png",
     name: "Naveen",
-    bio: "Naveen is a passionate and experienced edupreneur who has mentored thousands of students in his journey of 20+ years in the education space into teaching, student development, educational branding, content development and strategy.",
+    bio: "Naveen leads marketing, operations, and student success at UniExp Global, helping ensure that students and families receive clear communication, structured support, and a smooth experience throughout the admissions journey.",
+  },
+  {
+    id: "rishi",
+    role: "Director - Technology & Compliance",
+    image: "/images/team-rishi-manoj.png",
+    name: "Rishi Manoj",
+    bio: "Rishi leads technology and compliance initiatives at UniExp Global, supporting the systems, digital experience, and operational processes that help students and families navigate the admissions journey more efficiently. With a background in software development and product strategy, he helps connect the company's counseling model with reliable, scalable technology.",
+  },
+  {
+    id: "danielle",
+    role: "Student Profile Development Specialist",
+    image: "/images/team-danielle-jones.png",
+    name: "Danielle Jones",
+    bio: "Danielle develops personalized academic and extracurricular profiles at UniExp Global, helping students build distinctive applications aligned with their strengths and long-term goals. With expertise in mentorship, positioning, and holistic profile development, she supports students in crafting competitive portfolios for international university admissions.",
   },
 ];
 
 const aboutTrustChips = [
-  "Profile-led strategy",
-  "Parent-friendly guidance",
-  "Fit-first recommendations",
+  "Profile-led planning",
+  "Guidance built for families",
+  "Clear admissions strategy",
 ] as const;
 
 const values = [
@@ -95,12 +125,13 @@ export default function AboutPage() {
           <div className="mt-20">
             <h2 className="font-display text-2xl font-bold text-navy">Meet Our Team</h2>
             <p className="mt-2 text-muted">Dedicated specialists supporting your admissions journey.</p>
-            <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
+            <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {team.map((member) => (
                 <TeamMemberCard
-                  key={member.role}
+                  key={member.id}
                   role={member.role}
                   image={member.image}
+                  initials={member.initials}
                   name={member.name}
                   bio={member.bio}
                 />

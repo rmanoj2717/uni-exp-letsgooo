@@ -1,3 +1,9 @@
+export const testPrepOverviewLine =
+  "Test planning for SAT, ACT, IELTS, and TOEFL, aligned with each student's target universities and application timeline.";
+
+export const testPrepPackageNote =
+  "Standard includes test planning as part of admissions counselling. Premium includes everything in Standard plus 20 hours of personalized 1:1 preparation support for IELTS/TOEFL and SAT/ACT, so testing and applications stay coordinated under one plan.";
+
 export const testPrepItems = [
   {
     id: "sat",
@@ -23,7 +29,7 @@ export const testPrepItems = [
     id: "ielts-toefl",
     name: "IELTS / TOEFL",
     whatFor:
-      "English proficiency exams commonly required for universities in the UK, Canada, Australia, the US, and other destinations.",
+      "IELTS and TOEFL are English proficiency exams commonly required for universities in the UK, Canada, Australia, the US, and other destinations.",
     bestFor:
       "These tests are especially important for international applicants and visa-related requirements.",
     uniexpSupport:
@@ -33,7 +39,7 @@ export const testPrepItems = [
     id: "gre-gmat",
     name: "GRE / GMAT",
     whatFor:
-      "Graduate and business school tests used for selected master's, MBA, and specialized programs.",
+      "GRE and GMAT are graduate and business school tests used for selected master's, MBA, and specialized programs.",
     bestFor:
       "Requirements vary by university and program, so students should not prepare blindly.",
     uniexpSupport:

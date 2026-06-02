@@ -8,7 +8,7 @@ import { PricingUnsure } from "@/components/pricing/PricingUnsure";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent counselling packages — Basic, Standard, and Premium plans with clear inclusions for students and families.",
+    "Basic, Standard, and Premium counselling packages — Standard for admissions support, Premium for Standard plus personalized 1:1 test prep.",
 };
 
 export default function PricingPage() {
@@ -16,7 +16,7 @@ export default function PricingPage() {
     <>
       <PageHeader
         title="Pricing"
-        subtitle="Choose the level of support that fits your timeline, goals, and family needs — with clear inclusions at every tier."
+        subtitle="Standard is our main admissions counselling package. Premium includes everything in Standard plus personalized 1:1 test prep for IELTS/TOEFL and SAT/ACT."
       />
 
       <PricingTierCards />

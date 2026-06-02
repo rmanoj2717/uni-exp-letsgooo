@@ -21,7 +21,7 @@ export function ParentFriendly() {
               {credibilityPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3 text-navy">
                   <span
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange/15 text-xs font-bold text-orange"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cyan/15 text-xs font-bold text-cyan"
                     aria-hidden
                   >
                     ✓
@@ -33,10 +33,10 @@ export function ParentFriendly() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/70 shadow-[0_12px_40px_rgba(21,36,71,0.1)] md:rounded-3xl lg:aspect-[5/4]">
             <Image
-              src={assetPath("/images/home-counseling-session.png")}
-              alt="Counsellor and student in a one-on-one admissions planning session"
+              src={assetPath("/images/collaborative_consultation_in_a_modern_office.png")}
+              alt="Student and family in a university admissions counselling session"
               fill
-              className="object-cover object-center"
+              className="object-cover object-[center_35%]"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

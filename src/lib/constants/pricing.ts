@@ -5,13 +5,14 @@ export const pricingTiers: PricingTier[] = [
     id: "basic",
     name: "Basic",
     price: 50000,
-    touchpoints: "1 touchpoint per month",
+    touchpoints: "1 counselling touchpoint per month",
     bestFor:
-      "Students and families who need focused guidance, early planning, or help understanding the next steps.",
+      "Focused guidance for families who need early direction, profile review, and university shortlisting support.",
     includes: [
-      "Core counselling and profile review",
+      "Profile evaluation and admissions direction",
       "University shortlisting guidance",
-      "Application direction and next steps",
+      "Application direction and next-step planning",
+      "Overview of testing requirements for target universities",
       "Monthly progress check-in",
     ],
   },
@@ -21,40 +22,56 @@ export const pricingTiers: PricingTier[] = [
     price: 150000,
     popular: true,
     badge: "Most Popular",
-    touchpoints: "2 touchpoints per month",
+    touchpoints: "2 counselling touchpoints per month",
     bestFor:
-      "Students actively preparing applications who need structured support from shortlisting through submission.",
+      "Comprehensive admissions counselling for students who need structured university planning, application strategy, essay and SOP support, resume and CV guidance, scholarship guidance, and application tracking.",
     includes: [
+      "25 hours of admissions counselling support",
       "Personalized strategy and university shortlisting",
-      "Essay / SOP and application support",
-      "Scholarship, visa, and parent guidance",
-      "Timeline planning and progress tracking",
-      "Strong fit for most students",
+      "Application strategy, essay/SOP, and resume/CV support",
+      "Scholarship guidance and application tracking",
+      "Visa and parent guidance",
+      "Timeline planning and regular progress updates",
+      "Test planning for SAT, ACT, IELTS, and TOEFL",
     ],
   },
   {
     id: "premium",
     name: "Premium",
     price: 300000,
-    touchpoints: "4 touchpoints per month",
+    touchpoints: "3 counselling touchpoints per month",
     bestFor:
-      "Families who want high-touch, end-to-end support with deeper profile building and more frequent counsellor access.",
+      "Premium combines our full Standard admissions counselling package with personalized 1:1 preparation support for IELTS/TOEFL and SAT/ACT, helping students align testing, applications, and timelines under one coordinated plan.",
     includes: [
-      "Comprehensive end-to-end counselling",
-      "Deeper profile building and faster reviews",
-      "Frequent counsellor access and premium guidance",
-      "Application, essay, interview, visa, and pre-departure support",
-      "Parent updates and priority planning",
+      "Everything included in Standard",
+      "25 hours of admissions counselling support",
+      "20 hours of personalized 1:1 test prep support",
+      "3 counselling touchpoints per month",
+      "IELTS / TOEFL English proficiency preparation",
+      "SAT / ACT standardized test preparation",
+      "Enhanced progress guidance and regular updates",
     ],
   },
 ];
 
 export const pricingComparisonRows: PricingComparisonRow[] = [
   {
-    label: "Monthly touchpoints",
+    label: "Monthly counselling touchpoints",
     basic: "1 per month",
     standard: "2 per month",
-    premium: "4 per month",
+    premium: "3 per month",
+  },
+  {
+    label: "Admissions counselling support",
+    basic: "Focused guidance",
+    standard: "25 hours",
+    premium: "25 hours",
+  },
+  {
+    label: "Personalized 1:1 test prep support",
+    basic: false,
+    standard: false,
+    premium: "20 hours",
   },
   {
     label: "Profile evaluation",
@@ -81,9 +98,39 @@ export const pricingComparisonRows: PricingComparisonRow[] = [
     premium: true,
   },
   {
+    label: "Resume / CV guidance",
+    basic: false,
+    standard: true,
+    premium: true,
+  },
+  {
     label: "Scholarship guidance",
     basic: false,
     standard: true,
+    premium: true,
+  },
+  {
+    label: "Application tracking",
+    basic: false,
+    standard: true,
+    premium: true,
+  },
+  {
+    label: "Test prep planning (SAT, ACT, IELTS, TOEFL)",
+    basic: "Overview",
+    standard: true,
+    premium: true,
+  },
+  {
+    label: "IELTS / TOEFL preparation (1:1)",
+    basic: false,
+    standard: false,
+    premium: true,
+  },
+  {
+    label: "SAT / ACT preparation (1:1)",
+    basic: false,
+    standard: false,
     premium: true,
   },
   {
@@ -101,8 +148,8 @@ export const pricingComparisonRows: PricingComparisonRow[] = [
   {
     label: "Best for",
     basic: "Early planning & focused guidance",
-    standard: "Active application preparation",
-    premium: "End-to-end family support",
+    standard: "Structured admissions counselling",
+    premium: "Standard + personalized 1:1 test prep",
   },
 ];
 
@@ -110,12 +157,17 @@ export const pricingFaqs: PricingFaq[] = [
   {
     question: "Which plan do most families choose?",
     answer:
-      "Most families choose Standard because it provides structured support across shortlisting, essays, applications, scholarships, visa guidance, and parent communication.",
+      "Most families choose Standard because it provides comprehensive admissions counselling across shortlisting, essays, applications, scholarships, and tracking. Premium is a strong fit when students also need coordinated 1:1 test preparation alongside admissions support.",
+  },
+  {
+    question: "What does Premium include compared to Standard?",
+    answer:
+      "Premium includes everything in Standard—25 hours of admissions counselling support and structured application guidance—plus 20 hours of personalized 1:1 test prep support for IELTS/TOEFL and SAT/ACT, with three counselling touchpoints per month.",
   },
   {
     question: "Can we upgrade later?",
     answer:
-      "Yes. If your student needs more frequent support or deeper profile-building, we can discuss moving to a higher-touch plan.",
+      "Yes. If your student needs personalized 1:1 test prep support in addition to admissions counselling, we can discuss moving from Standard to Premium.",
   },
   {
     question: "Are taxes included?",
