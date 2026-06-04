@@ -23,10 +23,10 @@ const team: {
 }[] = [
   {
     id: "raahul",
-    role: "Cofounder & CEO",
+    role: "Cofounder",
     image: "/images/team-raahul-nair.png",
     name: "Raahul Nair",
-    bio: "Raahul leads UniExp Global as Cofounder & CEO, guiding strategic growth and operational development to expand access to international education through personalized guidance and mentorship. With a background spanning entrepreneurship, technology, and business development, he brings a practical, execution-driven approach to student-focused initiatives.",
+    bio: "Raahul guides strategic growth and operational development at UniExp Global, helping expand access to international education through personalized guidance and mentorship. With a background spanning entrepreneurship, technology, and business development, he brings a practical, execution-driven approach to student-focused initiatives.",
   },
   {
     id: "kiran",
@@ -55,6 +55,13 @@ const team: {
     image: "/images/team-danielle-jones.png",
     name: "Danielle Jones",
     bio: "Danielle develops personalized academic and extracurricular profiles at UniExp Global, helping students build distinctive applications aligned with their strengths and long-term goals. With expertise in mentorship, positioning, and holistic profile development, she supports students in crafting competitive portfolios for international university admissions.",
+  },
+  {
+    id: "brandon",
+    role: "Subject Expert",
+    image: "/images/team-brandon-kelly.png",
+    name: "Brandon Kelly",
+    bio: "Brandon brings years of higher education experience to UniExp Global as a Subject Expert, with director-level roles at Georgia State University, Johns Hopkins, and NYU/Rochester. He supports student profile development through academic enrichment, research and project guidance, leadership development, and subject-specific preparation to help students strengthen their candidacy for competitive global university admissions.",
   },
 ];
 
