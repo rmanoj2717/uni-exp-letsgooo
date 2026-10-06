@@ -40,26 +40,6 @@ export type FieldOfStudy = {
   description: string;
 };
 
-export type PricingTier = {
-  id: string;
-  name: string;
-  nameSuffix?: string;
-  price: number;
-  popular?: boolean;
-  badge?: string;
-  summary?: string;
-  touchpoints: string;
-  bestFor: string;
-  includes: string[];
-};
-
-export type PricingComparisonRow = {
-  label: string;
-  basic: boolean | string;
-  standard: boolean | string;
-  premium: boolean | string;
-};
-
 export type PricingFaq = {
   question: string;
   answer: string;

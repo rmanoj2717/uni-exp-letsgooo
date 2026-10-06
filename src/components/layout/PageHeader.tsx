@@ -1,5 +1,6 @@
-import { SectionCurve } from "@/components/decorative/SectionCurve";
+import { HeroAccent } from "@/components/decorative/HeroAccent";
 import { PathwayLines } from "@/components/decorative/PathwayLines";
+import { SectionCurve } from "@/components/decorative/SectionCurve";
 import { Container } from "@/components/ui/Container";
 
 export function PageHeader({
@@ -28,7 +29,7 @@ export function PageHeader({
             {subtitle}
           </p>
         )}
-        <div className="mt-8 h-1 w-14 rounded-full bg-cyan" aria-hidden />
+        <HeroAccent />
       </Container>
       <SectionCurve fill="surface" position="bottom" />
     </section>

@@ -28,14 +28,14 @@ export default function DestinationsPage() {
       <section className="py-12 md:py-14">
         <Container>
           <div className="mb-8 max-w-2xl">
-            <div className="mb-3 h-0.5 w-10 rounded-full bg-cyan" aria-hidden />
             <h2 className="font-display text-2xl font-bold text-navy md:text-3xl">
               Explore destinations
             </h2>
             <p className="mt-2 text-muted">
-              Compare countries by fit, outcomes, and family priorities — with clear guidance on what
-              each hub offers.
+              Compare countries by academic options, cost, career opportunities, and the
+              priorities that matter most to your family.
             </p>
+            <div className="mt-6 h-1 w-12 rounded-full bg-cyan" aria-hidden />
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">

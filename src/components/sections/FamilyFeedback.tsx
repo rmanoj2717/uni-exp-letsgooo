@@ -6,7 +6,7 @@ export function FamilyFeedback() {
     <Section
       eyebrow="Family feedback"
       title="Trusted by students and parents navigating global admissions"
-      subtitle="Families choose UniExp Global for clear guidance, structured planning, and support across every stage of the admissions journey."
+      subtitle="A few reflections from students and families who have worked with UniEXP Global."
       variant="default"
       className="!py-11 md:!py-12 [&_header]:!mb-7 md:[&_header]:!mb-8"
     >

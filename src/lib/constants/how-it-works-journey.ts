@@ -21,7 +21,7 @@ export const admissionsJourneyPhases: AdmissionsJourneyPhase[] = [
       },
       {
         step: 2,
-        title: "Personalized Counselling",
+        title: "Personalised Counselling",
         tag: "Pathway guidance",
         description:
           "Our counsellors help the student and family understand suitable academic pathways, admissions expectations, timelines, and next steps.",
@@ -58,7 +58,7 @@ export const admissionsJourneyPhases: AdmissionsJourneyPhase[] = [
         title: "Timeline Planning",
         tag: "Deadline structure",
         description:
-          "We organize deadlines for tests, essays, documents, applications, scholarships, and visa-related requirements.",
+          "We organise deadlines for tests, essays, documents, applications, scholarships, and visa-related requirements.",
       },
       {
         step: 6,
@@ -115,7 +115,7 @@ export const admissionsJourneyPhases: AdmissionsJourneyPhase[] = [
     phase: 4,
     title: "Decide & Transition",
     description:
-      "We support families through decisions, scholarships, visa steps, and the transition after enrollment.",
+      "We support families through decisions, scholarships, visa steps, and the transition after enrolment.",
     familySummary: {
       headline: "Support after admits",
       points: ["Compare decisions", "Plan scholarships & visa", "Prepare for transition"],
@@ -144,10 +144,10 @@ export const admissionsJourneyPhases: AdmissionsJourneyPhase[] = [
       },
       {
         step: 14,
-        title: "Post-Enrollment Support",
+        title: "Post-Enrolment Support",
         tag: "Transition planning",
         description:
-          "After enrollment, we help with pre-departure planning, transition preparation, and important next steps before campus arrival.",
+          "After enrolment, we help with pre-departure planning, transition preparation, and important next steps before campus arrival.",
       },
     ],
   },

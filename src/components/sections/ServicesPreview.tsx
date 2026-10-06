@@ -20,7 +20,7 @@ export function ServicesPreview() {
     <Section
       eyebrow="What we offer"
       title="Admissions support at every stage"
-      subtitle="Structured guidance across profile, applications, essays, and test planning (SAT, ACT, IELTS, TOEFL, GRE, GMAT) — explore the full scope on our Services page."
+      subtitle="Support across profile development, university shortlisting, applications, essays, and test preparation for SAT, ACT, IELTS, TOEFL, GRE, and GMAT."
       variant="off-white"
       className="!py-12 md:!py-14 [&_header]:!mb-8 md:[&_header]:!mb-9"
     >

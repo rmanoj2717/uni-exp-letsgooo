@@ -7,14 +7,14 @@ export function HowWeHelpChoose() {
     <section className="border-y border-border/50 bg-off-white py-12 md:py-14">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mx-auto mb-4 h-0.5 w-10 rounded-full bg-cyan" aria-hidden />
           <h2 className="font-display text-2xl font-bold text-navy md:text-3xl">
             How we help you choose
           </h2>
           <p className="mt-3 text-muted">
-            Destination decisions should feel strategic — grounded in your student&apos;s profile and
-            your family&apos;s priorities.
+            The right country depends on more than rankings. We look at the student&apos;s academic
+            profile, cost, scholarships, career opportunities, and family priorities.
           </p>
+          <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-cyan" aria-hidden />
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-3 md:gap-6">
           {howWeHelpChoose.map((item, index) => (

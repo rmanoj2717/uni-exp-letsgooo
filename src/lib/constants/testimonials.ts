@@ -1,7 +1,7 @@
 export const familyTestimonials = [
   {
     quote:
-      "The UniExp team made the admissions process feel much clearer for our family. We understood what to focus on, what deadlines mattered, and how to move forward with confidence.",
+      "The UniEXP Global team made the admissions process feel much clearer for our family. We understood what to focus on, what deadlines mattered, and how to move forward with confidence.",
     label: "Parent feedback",
   },
   {

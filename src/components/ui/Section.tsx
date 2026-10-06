@@ -37,7 +37,7 @@ export function Section({
               <p
                 className={cn(
                   "eyebrow mb-3",
-                  variant === "navy" ? "text-cyan-bright" : "text-cyan",
+                  variant === "navy" ? "text-cyan-bright" : "text-navy-light",
                 )}
               >
                 {eyebrow}

@@ -94,7 +94,7 @@ function SuccessState() {
           />
         </svg>
       </div>
-      <h3 className="font-display text-xl font-bold text-navy">Thank you for registering</h3>
+      <h3 className="font-display text-xl font-bold text-navy">Thank you</h3>
       <p className="mt-2 text-sm leading-relaxed text-muted">
         Our counsellors will review your details and reach out shortly to discuss your goals and
         next steps.
@@ -330,7 +330,7 @@ export function ConsultationForm({
       />
 
       <Button type="submit" size={inline ? "md" : "lg"} className="w-full">
-        Register Now
+        Request My Consultation
       </Button>
 
       {showContactInfo && <ContactInfoBlock className="mt-2" />}

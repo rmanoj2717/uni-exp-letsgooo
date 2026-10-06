@@ -9,7 +9,7 @@ const HERO_IMAGE = assetPath("/images/home-hero-path-forward.png");
 
 const heroHeadline = "A clearer path to global university admissions.";
 const heroSubheadline =
-  "UniExp Global helps students and families plan, shortlist, apply, and prepare for top universities abroad with profile-led strategy and end-to-end counselling support.";
+  "UniEXP Global helps students and families choose universities, prepare strong applications, and stay on track from the first shortlist through to departure.";
 
 const admissionsPath = [
   "Profile Review",

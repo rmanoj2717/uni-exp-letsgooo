@@ -13,7 +13,7 @@ export default function SatQuizPage() {
     <>
       <PageHeader
         title="Sample SAT Quiz"
-        subtitle="Five questions to preview our approach — then speak with a counsellor about your personalized test plan."
+        subtitle="Five questions to preview our approach, then speak with a counsellor about your personalised test plan."
       />
       <section className="section-pad">
         <Container>

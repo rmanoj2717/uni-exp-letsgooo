@@ -3,13 +3,13 @@ import { pricingFaqs } from "@/lib/constants/pricing";
 
 export function PricingFaq() {
   return (
-    <section className="section-pad bg-surface">
+    <section className="bg-surface py-12 md:py-16">
       <Container>
         <header className="mb-8 max-w-xl md:mb-9">
           <h2 className="font-display text-2xl font-bold text-navy md:text-3xl">
             Common questions
           </h2>
-          <div className="mt-4 h-1 w-10 rounded-full bg-cyan" aria-hidden />
+          <div className="mt-6 h-1 w-12 rounded-full bg-cyan" aria-hidden />
         </header>
 
         <div className="mx-auto max-w-3xl divide-y divide-border/60 rounded-2xl border border-border/60 bg-off-white/50">

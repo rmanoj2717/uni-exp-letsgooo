@@ -1,184 +1,4 @@
-import type { PricingComparisonRow, PricingFaq, PricingTier } from "@/types";
-
-export const pricingTiers: PricingTier[] = [
-  {
-    id: "basic",
-    name: "Basic",
-    price: 50000,
-    touchpoints: "1 counselling touchpoint per month",
-    bestFor:
-      "Focused guidance for families who need early direction, profile review, and university shortlisting support.",
-    includes: [
-      "Profile evaluation and admissions direction",
-      "University shortlisting guidance",
-      "Application direction and next-step planning",
-      "Overview of testing requirements for target universities",
-      "Monthly progress check-in",
-    ],
-  },
-  {
-    id: "standard",
-    name: "Standard",
-    price: 150000,
-    popular: true,
-    badge: "Most Popular",
-    touchpoints: "2 counselling touchpoints per month",
-    bestFor:
-      "Comprehensive admissions counselling for students who need structured university planning, application strategy, essay and SOP support, resume and CV guidance, scholarship guidance, and application tracking.",
-    includes: [
-      "25 hours of admissions counselling support",
-      "Personalized strategy and university shortlisting",
-      "Application strategy, essay/SOP, and resume/CV support",
-      "Scholarship guidance and application tracking",
-      "Visa and parent guidance",
-      "Timeline planning and regular progress updates",
-      "Test planning for SAT, ACT, IELTS, and TOEFL",
-    ],
-  },
-  {
-    id: "premium",
-    name: "Premium",
-    price: 300000,
-    touchpoints: "3 counselling touchpoints per month",
-    bestFor:
-      "Premium combines our full Standard admissions counselling package with personalized 1:1 preparation support for IELTS/TOEFL and SAT/ACT, helping students align testing, applications, and timelines under one coordinated plan.",
-    includes: [
-      "Everything included in Standard",
-      "25 hours of admissions counselling support",
-      "20 hours of personalized 1:1 test prep support",
-      "3 counselling touchpoints per month",
-      "IELTS / TOEFL English proficiency preparation",
-      "SAT / ACT standardized test preparation",
-      "Enhanced progress guidance and regular updates",
-    ],
-  },
-];
-
-export const pricingComparisonRows: PricingComparisonRow[] = [
-  {
-    label: "Monthly counselling touchpoints",
-    basic: "1 per month",
-    standard: "2 per month",
-    premium: "3 per month",
-  },
-  {
-    label: "Admissions counselling support",
-    basic: "Focused guidance",
-    standard: "25 hours",
-    premium: "25 hours",
-  },
-  {
-    label: "Personalized 1:1 test prep support",
-    basic: false,
-    standard: false,
-    premium: "20 hours",
-  },
-  {
-    label: "Profile evaluation",
-    basic: true,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "University shortlisting",
-    basic: true,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Application strategy",
-    basic: true,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Essay / SOP support",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Resume / CV guidance",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Scholarship guidance",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Application tracking",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Test prep planning (SAT, ACT, IELTS, TOEFL)",
-    basic: "Overview",
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "IELTS / TOEFL preparation (1:1)",
-    basic: false,
-    standard: false,
-    premium: true,
-  },
-  {
-    label: "SAT / ACT preparation (1:1)",
-    basic: false,
-    standard: false,
-    premium: true,
-  },
-  {
-    label: "Visa / pre-departure support",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Parent updates",
-    basic: false,
-    standard: true,
-    premium: true,
-  },
-  {
-    label: "Best for",
-    basic: "Early planning & focused guidance",
-    standard: "Structured admissions counselling",
-    premium: "Standard + personalized 1:1 test prep",
-  },
-];
-
-export const pricingFaqs: PricingFaq[] = [
-  {
-    question: "Which plan do most families choose?",
-    answer:
-      "Most families choose Standard because it provides comprehensive admissions counselling across shortlisting, essays, applications, scholarships, and tracking. Premium is a strong fit when students also need coordinated 1:1 test preparation alongside admissions support.",
-  },
-  {
-    question: "What does Premium include compared to Standard?",
-    answer:
-      "Premium includes everything in Standard—25 hours of admissions counselling support and structured application guidance—plus 20 hours of personalized 1:1 test prep support for IELTS/TOEFL and SAT/ACT, with three counselling touchpoints per month.",
-  },
-  {
-    question: "Can we upgrade later?",
-    answer:
-      "Yes. If your student needs personalized 1:1 test prep support in addition to admissions counselling, we can discuss moving from Standard to Premium.",
-  },
-  {
-    question: "Are taxes included?",
-    answer: "Applicable taxes are extra.",
-  },
-  {
-    question: "How do we know which plan is right?",
-    answer:
-      "Start with a consultation. We'll review the student's stage, target countries, timeline, and support needs before recommending a plan.",
-  },
-];
+import type { PricingFaq } from "@/types";
 
 export function formatINR(amount: number): string {
   return new Intl.NumberFormat("en-IN", {
@@ -187,3 +7,270 @@ export function formatINR(amount: number): string {
     maximumFractionDigits: 0,
   }).format(amount);
 }
+
+export const selfPacedPrograms = [
+  {
+    id: "explorer",
+    name: "Explorer",
+    tagline: "Discover Potential and Build Foundations",
+    stageLabel: "Foundations",
+    price: 27999,
+    idealFor: "Grades 8, 9 & 10 / Graduation 1st & 2nd years",
+    idealDuration: "3 months",
+    maximumDuration: "6 months",
+    counsellorInteractions: 10,
+    mentorInteractions: 4,
+    testPrepInteractions: 0,
+    keyFocus: [
+      "Profile evaluation",
+      "Career discovery",
+      "Academic planning and subject selection",
+      "Competitions, leadership and community service",
+      "Passion projects and research orientation",
+      "Introductory internships",
+      "Portfolio development",
+      "Reading and writing habits",
+      "Mentor reviews",
+    ],
+    additionalSupport: [
+      "Psychometric Test & Report",
+      "Project & Internship connections",
+      "Email / WhatsApp response during working days and hours",
+    ],
+    additionalSupportIntro: "Explorer support includes:",
+  },
+  {
+    id: "builder",
+    name: "Builder",
+    tagline: "Build a Globally Competitive Profile",
+    stageLabel: "Profile Development",
+    price: 49995,
+    idealFor: "Grades 10 & 11 / Graduation 2nd & 3rd years",
+    idealDuration: "6 months",
+    maximumDuration: "9 months",
+    counsellorInteractions: 12,
+    mentorInteractions: 6,
+    testPrepInteractions: 6,
+    keyFocus: [
+      "Everything included in Explorer",
+      "SAT / ACT / GRE / GMAT preparation support",
+      "IELTS / TOEFL preparation support",
+      "Research projects",
+      "Publications",
+      "Advanced internships",
+      "Higher-level competitions",
+      "Startup projects",
+      "Resume development",
+      "LinkedIn profile",
+      "Personal branding",
+      "Summer schools",
+      "Portfolio refinement",
+    ],
+    additionalSupport: [
+      "SAT / ACT / GRE / GMAT materials and mock tests",
+      "IELTS / TOEFL materials and mock tests",
+      "Exclusive talks with Startup Entrepreneurs",
+    ],
+    additionalSupportIntro: "Builder adds:",
+  },
+  {
+    id: "achiever",
+    name: "Achiever",
+    tagline: "Convert Profile into Admission Offers",
+    stageLabel: "Applications",
+    price: 94995,
+    idealFor: "Grades 11 & 12 / Graduation 3rd & 4th years",
+    idealDuration: "9 months",
+    maximumDuration: "12 months",
+    counsellorInteractions: 18,
+    mentorInteractions: 6,
+    testPrepInteractions: 6,
+    keyFocus: [
+      "Everything included in Builder",
+      "Application strategy and timeline management",
+      "SOP and essay guidance",
+      "LOR support",
+      "Resume tailoring",
+      "Application review and submission",
+      "Interview preparation",
+      "University shortlisting",
+      "Waitlist strategy",
+      "Financial planning",
+      "Scholarship guidance",
+      "Visa guidance",
+      "Pre-departure guidance",
+    ],
+    additionalSupport: [
+      "Dynamic SOP editing",
+      "Dynamic application timeline tracking and triggers",
+      "Mock interviews",
+      "Application handholding",
+    ],
+    additionalSupportIntro: "Achiever adds:",
+  },
+] as const;
+
+export const bundledPrograms = [
+  {
+    id: "scholar",
+    name: "Scholar",
+    tagline: "From Academic Excellence to Global Admissions",
+    price: 144999,
+    duration: "2 years",
+    idealFor: "Grade 11 / Graduation 3rd year",
+    counsellorInteractionsPerYear: 18,
+    mentorInteractionsPerYear: 6,
+    testPrepInteractionsPerYear: 6,
+    keyAreas: [
+      "Academic performance and university alignment",
+      "Country, university, course and career research",
+      "Profile development",
+      "Testing strategy",
+      "Research, projects and internships",
+      "Leadership",
+      "Reach / Target / Safe university planning",
+      "Application planning",
+      "Essays and SOPs",
+      "Scholarships and affordability",
+      "Interview preparation",
+      "Application tracking",
+    ],
+  },
+  {
+    id: "dreamer",
+    name: "Dreamer",
+    tagline: "Turning Dreams into Global Destinations",
+    price: 225999,
+    duration: "3 years",
+    idealFor: "Grade 10 / Graduation 2nd year",
+    counsellorInteractionsPerYear: 18,
+    mentorInteractionsPerYear: 6,
+    testPrepInteractionsPerYear: 6,
+    keyAreas: [
+      "Academic and subject planning",
+      "Interest and career exploration",
+      "Personalised 3-year roadmap",
+      "Global course and university exploration",
+      "Extracurricular, leadership, research and project development",
+      "Meaningful activities rather than certificate accumulation",
+      "Competition, hackathon and conference exposure",
+      "Test planning",
+      "Tuition, scholarships and financial awareness",
+      "Regular reviews and roadmap adjustment",
+    ],
+  },
+  {
+    id: "visionary",
+    name: "Visionary",
+    tagline: "Building Strong Foundations for Global Success",
+    price: 315999,
+    duration: "4 years",
+    idealFor: "Grade 9 / Graduation 1st year",
+    counsellorInteractionsPerYear: 18,
+    mentorInteractionsPerYear: 6,
+    testPrepInteractionsPerYear: 6,
+    keyAreas: [
+      "Interests, strengths and aspirations",
+      "Career exploration",
+      "Long-term academic planning",
+      "Global university and education-system awareness",
+      "Course and discipline exploration",
+      "Future-ready skills",
+      "Sustained extracurricular activities",
+      "Leadership",
+      "Reading, research and independent learning",
+      "Projects, internships and volunteering",
+      "Competitions and certifications",
+      "Profile development",
+      "Early financial and scholarship awareness",
+      "Annual planning and reviews",
+    ],
+  },
+] as const;
+
+export const bundledProgramSupport = [
+  "Psychometric Test & Report",
+  "Project & Internship connections",
+  "Email / WhatsApp response during working days and hours",
+  "SAT / ACT / GRE / GMAT material and mock tests",
+  "IELTS / TOEFL material and mock tests",
+  "Exclusive talks with Startup Entrepreneurs",
+  "Dynamic SOP editing",
+  "Dynamic application timeline tracking and triggers",
+  "Mock interviews",
+  "Application handholding",
+] as const;
+
+export const compass360Pricing = {
+  name: "Compass360",
+  tagline: "Discover Yourself. Find Your Fit. Shape Your Future.",
+  priceExGst: 9999,
+  priceInclGst: 11799,
+  duration: "2 weeks",
+  liveInteractions: 3,
+  idealFor: "Grade 8 and above",
+  description:
+    "A student discovery, academic direction, career exploration, university fit, and development planning program.",
+  href: "/compass360/",
+} as const;
+
+export const exclusiveServices = [
+  {
+    id: "psychometric",
+    name: "Psychometric assessment & report, university matching, career roadmap",
+    price: 10000,
+  },
+  {
+    id: "test-prep-coaching",
+    name: "Test prep coaching",
+    price: null,
+  },
+  {
+    id: "research-publication",
+    name: "Research papers & publication",
+    price: null,
+  },
+  {
+    id: "internships",
+    name: "Internships & guidance",
+    price: null,
+  },
+  {
+    id: "visa",
+    name: "Visa guidance & documentation",
+    price: null,
+  },
+  {
+    id: "languages",
+    name: "Foreign languages",
+    price: null,
+  },
+  {
+    id: "funding",
+    name: "Scholarships, funding & educational loans guidance",
+    price: null,
+  },
+] as const;
+
+export const pricingFaqs: PricingFaq[] = [
+  {
+    question: "What is the difference between Self-paced and Bundled Programs?",
+    answer:
+      "Self-paced Programs run for a defined short-term period, while Bundled Programs provide longer-term guidance over two to four years. Both include live counsellor and mentor interactions, with the level and duration depending on the program.",
+  },
+  {
+    question: "Which Self-paced Program is appropriate for my student?",
+    answer:
+      "Explorer is designed primarily for Grades 8–10 and early undergraduate students, Builder for Grades 10–11 and mid-undergraduate students, and Achiever for Grades 11–12 and later undergraduate students. We can help families choose based on the student's current stage and goals.",
+  },
+  {
+    question: "Is test preparation available separately?",
+    answer:
+      "Yes. Score360 provides dedicated preparation for SAT, ACT, GRE, GMAT, TOEFL, and IELTS, with both 1:1 and small-group options.",
+  },
+  {
+    question: "Can Compass360 be taken separately?",
+    answer:
+      "Yes. Compass360 is a focused two-week program for student discovery, academic direction, career exploration, university fit, and development planning.",
+  },
+];

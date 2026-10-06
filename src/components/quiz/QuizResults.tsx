@@ -16,10 +16,10 @@ export function QuizResults({
 
   let message = "Let's build your foundation together.";
   let detail =
-    "A structured test plan can help you improve steadily — we'll map the right prep for your targets.";
+    "A structured test plan can help you improve steadily. We'll map the right prep for your targets.";
 
   if (score >= 4) {
-    message = "Strong progress — let's optimize.";
+    message = "Strong progress. Let's optimize.";
     detail =
       "You're on the right track. A counsellor can help fine-tune your strategy for your dream universities.";
   } else if (score >= 3) {

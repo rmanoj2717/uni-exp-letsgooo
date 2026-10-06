@@ -18,7 +18,7 @@ export const contact = {
 } as const;
 
 export const brand = {
-  name: "UniExp Global",
+  name: "UniEXP Global",
   tagline: "Your Success Partner in Top Global University Admissions",
   subtagline: "Guidance, strategy, and support for a future without limits.",
   ethicalNote:

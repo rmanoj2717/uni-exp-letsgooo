@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "The full UniExp Global admissions journey — 14 structured steps from free consultation through post-enrollment support.",
+    "The full UniEXP Global admissions journey: 14 structured steps from free consultation through post-enrolment support.",
 };
 
 export default function HowItWorksPage() {

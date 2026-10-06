@@ -4,11 +4,11 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { contact } from "@/lib/constants/contact";
-import { registerModalIntro, registerModalTitle } from "@/lib/constants/register-form";
+import { registerModalIntro } from "@/lib/constants/register-form";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with UniExp Global for admissions counselling and registration.",
+  description: "Get in touch with UniEXP Global for admissions counselling and registration.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         title="Contact us"
-        subtitle="We'd love to hear about your goals. Reach out or register below and our counsellors will follow up."
+        subtitle="Tell us what you are planning, and our counsellors will follow up to discuss your goals and next steps."
       />
 
       <section className="section-pad">
@@ -66,7 +66,7 @@ export default function ContactPage() {
             </div>
 
             <Card className="lg:col-span-3">
-              <h2 className="font-display text-2xl font-bold text-navy">{registerModalTitle}</h2>
+              <h2 className="font-display text-2xl font-bold text-navy">Request a Consultation</h2>
               <p className="mt-2 text-muted">{registerModalIntro}</p>
               <div className="mt-6">
                 <ConsultationForm source="contact-page" inline />

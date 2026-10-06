@@ -1,7 +1,7 @@
-import { SectionCurve } from "@/components/decorative/SectionCurve";
+import { HeroAccent } from "@/components/decorative/HeroAccent";
 import { PathwayLines } from "@/components/decorative/PathwayLines";
+import { SectionCurve } from "@/components/decorative/SectionCurve";
 import { Container } from "@/components/ui/Container";
-import { destinationsMarketingCopy } from "@/lib/constants/study-destinations";
 
 export function DestinationsHero() {
   return (
@@ -42,12 +42,12 @@ export function DestinationsHero() {
           Global destinations
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-          University planning built around goals, budget, and outcomes across{" "}
-          {destinationsMarketingCopy}
+          We help families compare study options across the USA, UK, Canada, Australia, Germany,
+          France, the Netherlands, Japan, UAE, Singapore, Ireland, New Zealand, and more.
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg">
-          We help families choose destinations based on academic fit, budget, career goals, and
-          long-term outcomes — not trends alone.
+          The right destination depends on academic options, cost, career goals, and what the
+          student wants from their university experience.
         </p>
         <div className="mt-7 flex flex-wrap gap-2">
           {["Balanced shortlists", "Scholarship-aware planning", "Long-term outcomes"].map((chip) => (
@@ -59,7 +59,7 @@ export function DestinationsHero() {
             </span>
           ))}
         </div>
-        <div className="mt-8 h-1 w-14 rounded-full bg-cyan" aria-hidden />
+        <HeroAccent />
       </Container>
       <SectionCurve fill="surface" position="bottom" />
     </section>

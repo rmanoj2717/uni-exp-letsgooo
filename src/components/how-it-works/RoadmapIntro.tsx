@@ -20,9 +20,8 @@ export function RoadmapIntro() {
             4 phases. {journeyStepCount} guided steps.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted md:text-base">
-            A structured admissions roadmap from first conversation to campus arrival, built to
-            help families understand what happens now, what comes next, and what needs attention
-            before each deadline.
+            The process is broken into 14 steps so families know what happens now, what comes next,
+            and what needs attention before each deadline.
           </p>
         </div>
 

@@ -43,7 +43,7 @@ export function SiteHeader() {
         <Link href="/" className="relative flex shrink-0 items-center transition-opacity hover:opacity-90">
           <Image
             src={assetPath("/brand/logo.png")}
-            alt="UniExp Global"
+            alt="UniEXP Global"
             width={168}
             height={50}
             className="h-9 w-auto object-contain sm:h-10 md:h-11"
@@ -51,7 +51,7 @@ export function SiteHeader() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Main">
           {mainNav.map((item) => {
             const active = isNavActive(pathname, item.href);
             return (
@@ -59,7 +59,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative rounded-lg px-2.5 py-2 text-[14px] font-medium tracking-wide transition-colors duration-200 xl:px-3.5 xl:text-[15px]",
+                  "relative rounded-lg px-2.5 py-2 text-[14px] font-medium tracking-wide transition-colors duration-200",
                   active
                     ? "bg-cyan-soft text-navy"
                     : "text-muted hover:bg-off-white hover:text-navy",
@@ -79,7 +79,7 @@ export function SiteHeader() {
           />
           <button
             type="button"
-            className="inline-flex rounded-xl border border-border/80 p-2.5 text-navy transition-colors hover:border-cyan/40 hover:bg-cyan-soft/50 lg:hidden"
+            className="inline-flex rounded-xl border border-border/80 p-2.5 text-navy transition-colors hover:border-cyan/40 hover:bg-cyan-soft/50 xl:hidden"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
             aria-expanded={mobileOpen}

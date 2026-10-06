@@ -1,28 +1,34 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { PricingComparison } from "@/components/pricing/PricingComparison";
+import { PricingBundled } from "@/components/pricing/PricingBundled";
+import { PricingExclusivePrograms } from "@/components/pricing/PricingExclusivePrograms";
+import { PricingExclusiveServices } from "@/components/pricing/PricingExclusiveServices";
+import { PricingFamilyRail } from "@/components/pricing/PricingFamilyRail";
 import { PricingFaq } from "@/components/pricing/PricingFaq";
-import { PricingTierCards } from "@/components/pricing/PricingTierCards";
+import { PricingSelfPaced } from "@/components/pricing/PricingSelfPaced";
 import { PricingUnsure } from "@/components/pricing/PricingUnsure";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Programs & Pricing",
   description:
-    "Basic, Standard, and Premium counselling packages — Standard for admissions support, Premium for Standard plus personalized 1:1 test prep.",
+    "Self-paced, bundled, and exclusive UniEXP Global programs, plus exclusive services. Public prices for Explorer, Builder, Achiever, Scholar, Dreamer, Visionary, Compass360, and Score360.",
 };
 
 export default function PricingPage() {
   return (
     <>
       <PageHeader
-        title="Pricing"
-        subtitle="Standard is our main admissions counselling package. Premium includes everything in Standard plus personalized 1:1 test prep for IELTS/TOEFL and SAT/ACT."
+        title="Programs & Pricing"
+        subtitle="Choose from focused short-term programs, longer-term bundled guidance, and specialist programs based on the student's stage and goals."
       />
 
-      <PricingTierCards />
-      <PricingComparison />
-      <PricingUnsure />
+      <PricingFamilyRail />
+      <PricingSelfPaced />
+      <PricingBundled />
+      <PricingExclusivePrograms />
+      <PricingExclusiveServices />
       <PricingFaq />
+      <PricingUnsure />
     </>
   );
 }

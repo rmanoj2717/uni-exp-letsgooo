@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Compass360FeaturedBanner } from "@/components/services/Compass360FeaturedBanner";
 import { ServiceGridCard } from "@/components/services/ServiceGridCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { CtaButton } from "@/components/cta/CtaButton";
@@ -12,7 +13,7 @@ const SERVICES_INTRO_IMAGE = assetPath("/images/services-intro-counselling.png")
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Profile evaluation, university shortlisting, essays, SAT/ACT/IELTS/TOEFL/GRE/GMAT test planning, scholarships, visa support, and more.",
+    "Profile evaluation, university shortlisting, essays, SAT/ACT/IELTS/TOEFL/GRE/GMAT test preparation, scholarships, visa support, and more.",
 };
 
 export default function ServicesPage() {
@@ -20,22 +21,24 @@ export default function ServicesPage() {
     <>
       <PageHeader
         title="Admissions services"
-        subtitle="End-to-end counselling designed for ambitious students and supportive families."
+        subtitle="Counselling for students and families across university planning, applications, essays, tests, visas, and pre-departure preparation."
       />
 
       <section className="py-12 md:py-14">
         <Container>
-          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+          <Compass360FeaturedBanner />
+
+          <div className="mt-12 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:max-w-none lg:text-left">
-              <div className="mx-auto mb-4 h-0.5 w-12 rounded-full bg-cyan lg:mx-0" aria-hidden />
               <h2 className="font-display text-balance text-2xl font-bold text-navy md:text-3xl">
-                Support across every stage of the admissions journey
+                What we can help with
               </h2>
               <p className="mt-4 text-pretty leading-relaxed text-muted md:text-lg">
-                From profile evaluation to final submission, UniExp Global helps students and families
-                move through the process with structure, clarity, and confidence — including test
-                planning for SAT, ACT, IELTS, TOEFL, GRE, and GMAT.
+                From profile evaluation and university shortlisting to essays, applications, and
+                test preparation, our counsellors help families manage each part of the admissions
+                process.
               </p>
+              <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-cyan lg:mx-0" aria-hidden />
             </div>
             <div className="relative mx-auto aspect-[5/4] w-full max-w-lg overflow-hidden rounded-2xl border border-border/70 shadow-[0_12px_40px_rgba(21,36,71,0.1)] md:rounded-3xl lg:max-w-none">
               <Image
@@ -69,8 +72,8 @@ export default function ServicesPage() {
               Not sure where your student needs support?
             </h2>
             <p className="mt-3 text-pretty leading-relaxed text-muted">
-              Start with a consultation and we&apos;ll help identify the right next steps based on
-              your profile, timeline, and target destinations.
+              Start with a consultation. We will look at the student&apos;s profile, timeline, and
+              target destinations, then identify where our help would be most useful.
             </p>
             <div className="mt-7 flex justify-center">
               <CtaButton source="services-consultation" size="lg" label="Book a Free Consultation" />

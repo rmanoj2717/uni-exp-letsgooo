@@ -6,12 +6,12 @@ const pillars = [
   {
     title: "Student Profile",
     description:
-      "Academics, activities, goals, and personal story — the foundation of every decision.",
+      "Academics, activities, goals, and personal story: the foundation of every decision.",
   },
   {
     title: "Admissions Data",
     description:
-      "Acceptance trends, program fit, and outcomes — so choices are informed, not guessed.",
+      "Acceptance trends, program fit, and outcomes, so choices are informed, not guessed.",
   },
   {
     title: "Counsellor Insight",
@@ -81,10 +81,6 @@ function BestFitStrategyPreview() {
         </ul>
       </div>
 
-      <p className="mt-4 text-xs leading-relaxed text-muted italic">
-        Recommendations are guided by fit, not commissions.
-      </p>
-
       <Link
         href="/how-it-works"
         className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-cyan transition-colors hover:text-navy"
@@ -102,9 +98,9 @@ export function StrategyFormula() {
       <Container>
         <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-12">
           <div className="flex min-w-0 flex-col">
-            <p className="eyebrow mb-3 text-cyan">Our approach</p>
+            <p className="eyebrow mb-3 text-navy-light">Our approach</p>
             <h2 className="font-display text-balance text-3xl font-bold leading-tight tracking-tight text-navy md:text-4xl">
-              How we build your best-fit strategy
+              How we build your university plan
             </h2>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted md:text-xl">
               Student Profile + Admissions Data + Counsellor Insight = A plan your family

@@ -7,7 +7,7 @@ export function ProcessPreview() {
     <Section
       eyebrow="Your journey"
       title="A clear path from discovery to departure"
-      subtitle="Clear milestones at every stage — so you always know what comes next."
+      subtitle="Four stages show what happens first, what comes next, and where your attention is needed along the way."
       variant="navy"
       className="!py-12 md:!py-14 [&_header]:!mb-8 md:[&_header]:!mb-10"
     >

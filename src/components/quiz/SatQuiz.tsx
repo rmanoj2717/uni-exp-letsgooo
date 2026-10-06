@@ -27,7 +27,7 @@ export function SatQuiz() {
       <Card className="max-w-2xl mx-auto text-center">
         <h2 className="font-display text-2xl font-bold text-navy">Sample SAT Quiz</h2>
         <p className="mt-3 text-muted">
-          Five quick questions across reading, math, and writing. No timer — take your time and
+          Five quick questions across reading, math, and writing. No timer. Take your time and
           see where you stand.
         </p>
         <Button className="mt-8" size="lg" onClick={() => setPhase("quiz")}>

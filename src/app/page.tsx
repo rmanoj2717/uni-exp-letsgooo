@@ -1,4 +1,5 @@
 import { DestinationsPreview } from "@/components/sections/DestinationsPreview";
+import { Compass360Preview } from "@/components/sections/Compass360Preview";
 import { EthicsBanner } from "@/components/sections/EthicsBanner";
 import { FamilyFeedback } from "@/components/sections/FamilyFeedback";
 import { Hero } from "@/components/sections/Hero";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <StrategyFormula />
       <FamilyFeedback />
       <ServicesPreview />
+      <Compass360Preview />
       <ProcessPreview />
       <DestinationsPreview />
       <ParentFriendly />

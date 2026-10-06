@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { destinations } from "@/lib/constants/destinations";
-import { destinationsMarketingCopy } from "@/lib/constants/study-destinations";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
 
@@ -9,7 +8,7 @@ export function DestinationsPreview() {
     <Section
       eyebrow="Where you can study"
       title="Study destinations worldwide"
-      subtitle={`Balanced university recommendations across ${destinationsMarketingCopy}`}
+      subtitle="Explore study options across the USA, UK, Canada, Australia, Germany, France, the Netherlands, Japan, UAE, Singapore, Ireland, New Zealand, and more."
       variant="off-white"
       className="!py-12 md:!py-14 [&_header]:!mb-8 md:[&_header]:!mb-9 [&_header]:mx-auto [&_header]:max-w-2xl [&_header]:text-center [&_header>div]:mx-auto"
     >

@@ -1,4 +1,4 @@
-export const registerModalTitle = "Register Now";
+export const registerModalTitle = "Book a Free Consultation";
 
 export const registerModalIntro =
   "Share a few details and our counsellors will reach out to understand your goals, timeline, and study abroad plans.";

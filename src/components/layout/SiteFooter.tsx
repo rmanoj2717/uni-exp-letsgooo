@@ -17,16 +17,13 @@ export function SiteFooter() {
           <div className="lg:col-span-5">
             <Image
               src={assetPath("/brand/logo.png")}
-              alt="UniExp Global"
+              alt="UniEXP Global"
               width={180}
               height={54}
               className="h-11 w-auto brightness-0 invert sm:h-12"
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/75">
               {brand.tagline}
-            </p>
-            <p className="mt-4 max-w-sm text-xs leading-relaxed text-white/45">
-              {brand.ethicalNote}
             </p>
           </div>
 
@@ -105,7 +102,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-center text-xs text-white/40 sm:flex-row sm:text-left">
-          <p>© {new Date().getFullYear()} UniExp Global. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} UniEXP Global. All rights reserved.</p>
           <p className="text-white/35">Your success partner in global university admissions</p>
         </div>
       </div>

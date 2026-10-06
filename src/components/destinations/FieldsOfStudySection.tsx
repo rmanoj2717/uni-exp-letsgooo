@@ -10,8 +10,8 @@ export function FieldsOfStudySection() {
           <div className="mx-auto mb-4 h-0.5 w-10 rounded-full bg-orange" aria-hidden />
           <h2 className="font-display text-2xl font-bold text-navy md:text-3xl">Fields of study</h2>
           <p className="mt-3 text-muted">
-            We match academic fields to student strengths, portfolio readiness, and career goals —
-            across STEM, business, creative paths, and specialist programs.
+            We help students compare fields of study based on their strengths, academic background,
+            interests, and career goals.
           </p>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -17,7 +17,7 @@ export const destinations: Destination[] = [
     name: "UK",
     tagline: "Focused degrees at globally ranked institutions.",
     highlights: ["UCAS applications", "3-year honours", "Russell Group targets"],
-    bestFor: "Focused degree paths and globally recognized institutions in shorter timelines.",
+    bestFor: "Focused degree paths and globally recognised institutions in shorter timelines.",
     considerations: "Competitive entry for top courses; align academics and subject fit closely.",
     visualLabel: "Historic university campus",
     theme: "uk",

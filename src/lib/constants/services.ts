@@ -3,11 +3,11 @@ import type { Service } from "@/types";
 export const services: Service[] = [
   {
     id: "profile-evaluation",
-    title: "Profile Evaluation & Personalized Counselling",
+    title: "Profile Evaluation & Personalised Counselling",
     summary:
       "A deep dive into academics, goals, and strengths to shape a clear admissions direction.",
     description:
-      "We start by understanding the student's academic background, strengths, interests, goals, and family priorities. This gives us the foundation to create a personalized admissions direction instead of offering generic university advice.",
+      "We start by understanding the student's academic background, strengths, interests, goals, and family priorities. This gives us the foundation to create a personalised admissions direction instead of offering generic university advice.",
     helpWith: [
       "Academic and extracurricular profile review",
       "Goals, interests, and destination preferences",
@@ -33,7 +33,7 @@ export const services: Service[] = [
     title: "Application Strategy & Timeline",
     summary: "Structured milestones so applications stay on track and stress stays low.",
     description:
-      "We turn the admissions process into a clear roadmap with milestones, deadlines, and priorities. This helps students stay organized while reducing last-minute pressure for parents and families.",
+      "We turn the admissions process into a clear roadmap with milestones, deadlines, and priorities. This helps students stay organised while reducing last-minute pressure for parents and families.",
     helpWith: [
       "Application calendar and key deadlines",
       "Test, essay, and document planning",
@@ -48,7 +48,7 @@ export const services: Service[] = [
     description:
       "We help students present academics, achievements, activities, projects, and leadership experience in a clear and compelling format. The goal is to create a university-ready document that supports the student's overall application story.",
     helpWith: [
-      "Activity and achievement organization",
+      "Activity and achievement organisation",
       "Resume/CV structure and wording",
       "Stronger academic and extracurricular positioning",
     ],
@@ -97,13 +97,13 @@ export const services: Service[] = [
     id: "test-prep",
     title: "Test Preparation Support",
     summary:
-      "SAT, ACT, IELTS, and TOEFL planning in Standard; personalized 1:1 prep in Premium.",
+      "Test preparation through Score360 for SAT, ACT, GRE, GMAT, IELTS, and TOEFL, with 1:1 and small-group options.",
     description:
-      "Standard includes test planning for SAT, ACT, IELTS, and TOEFL as part of admissions counselling. Premium adds 20 hours of personalized 1:1 preparation support for IELTS/TOEFL and SAT/ACT, aligned with each student's applications and timeline. We help families choose the right exams, set realistic goals, and schedule prep without adding unnecessary stress.",
+      "Test preparation is available through Score360 for SAT, ACT, GRE, GMAT, IELTS, and TOEFL. Support combines diagnostic assessment, targeted preparation, practice tests, mock exams, and test strategy.",
     helpWith: [
-      "SAT, ACT, IELTS, and TOEFL planning (Standard)",
-      "Personalized 1:1 IELTS/TOEFL and SAT/ACT prep (Premium)",
-      "Test timelines connected to applications",
+      "SAT, ACT, GRE, GMAT, IELTS and TOEFL preparation",
+      "1:1 and small-group options",
+      "Test planning aligned with application timelines",
     ],
     icon: "test",
   },
@@ -149,7 +149,7 @@ export const services: Service[] = [
   {
     id: "visa",
     title: "Visa & Pre-Departure Support",
-    summary: "From visa documentation to departure readiness — support through takeoff.",
+    summary: "From visa documentation to departure readiness. Support through takeoff.",
     description:
       "After admissions decisions arrive, families still need support with visas, documents, travel planning, and the transition to campus. We help students and parents prepare for the next stage with confidence.",
     helpWith: [

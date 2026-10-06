@@ -10,8 +10,8 @@ export function DestinationsCta() {
             Not sure which country fits your profile?
           </h2>
           <p className="mt-3 text-pretty leading-relaxed text-muted">
-            Start with a consultation and we&apos;ll help you compare destinations based on academics,
-            budget, timelines, career goals, and long-term fit.
+            Start with a consultation and we will help you compare countries based on academics,
+            cost, timelines, career goals, and personal priorities.
           </p>
           <div className="mt-7 flex justify-center">
             <CtaButton

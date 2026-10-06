@@ -9,13 +9,14 @@ export function ParentFriendly() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <p className="eyebrow text-cyan">Built for families</p>
+            <p className="eyebrow text-navy-light">Built for families</p>
             <h2 className="mt-3 font-display text-balance text-3xl font-bold leading-tight tracking-tight text-navy md:text-4xl">
-              Clear, structured support — less overwhelming for parents and students
+              Admissions planning that keeps the whole family informed
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              We know this journey affects the whole family. Our counsellors communicate with
-              clarity, set realistic timelines, and keep you informed at every stage.
+              University applications affect the whole family. Our counsellors set realistic
+              timelines, explain the decisions ahead, and keep students and parents informed
+              throughout the process.
             </p>
             <ul className="mt-9 grid gap-3 sm:grid-cols-2">
               {credibilityPoints.map((point) => (

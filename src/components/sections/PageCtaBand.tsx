@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 
 export function PageCtaBand({
   title = "Ready to plan your global university journey?",
-  subtitle = "Book a free consultation with our counsellors. We'll understand your goals and outline clear next steps — for students and parents.",
+  subtitle = "Tell us what you are planning. We will review your goals, timeline, and priorities and explain the next steps.",
   source = "page-cta",
 }: {
   title?: string;
