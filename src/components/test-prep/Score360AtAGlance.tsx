@@ -1,17 +1,17 @@
-import { score360Glance } from "@/lib/constants/score360";
+import { score360Highlights } from "@/lib/constants/score360";
 
 export function Score360AtAGlance() {
   return (
-    <ul className="grid divide-y divide-cyan/20 rounded-2xl border border-cyan/20 bg-cyan-soft/40 px-5 py-4 sm:grid-cols-2 sm:divide-y-0 md:px-6 lg:grid-cols-4">
-      {score360Glance.map((item, index) => (
+    <ul className="grid grid-cols-2 gap-x-5 gap-y-3 rounded-2xl border border-cyan/20 bg-cyan-soft/40 px-5 py-4 md:px-6 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-cyan/20">
+      {score360Highlights.map((item) => (
         <li
-          key={item.id}
-          className={`py-3 sm:py-2 lg:px-6 lg:first:pl-0 lg:last:pr-0 ${
-            index % 2 === 1 ? "sm:border-l sm:border-cyan/20 sm:pl-5 lg:pl-6" : ""
-          } ${index === 2 ? "lg:border-l lg:border-cyan/20" : ""}`}
+          key={item}
+          className="flex items-center gap-2.5 lg:px-6 lg:first:pl-0 lg:last:pr-0"
         >
-          <p className="font-display text-lg font-bold leading-tight text-navy">{item.headline}</p>
-          <p className="mt-1 text-xs leading-snug text-muted">{item.detail}</p>
+          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan" aria-hidden />
+          <span className="font-display text-sm font-bold leading-snug text-navy md:text-base">
+            {item}
+          </span>
         </li>
       ))}
     </ul>

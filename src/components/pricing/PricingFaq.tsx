@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { pricingFaqs } from "@/lib/constants/pricing";
+import { programFaqs } from "@/lib/constants/programs";
 
 export function PricingFaq() {
   return (
@@ -13,7 +13,7 @@ export function PricingFaq() {
         </header>
 
         <div className="mx-auto max-w-3xl divide-y divide-border/60 rounded-2xl border border-border/60 bg-off-white/50">
-          {pricingFaqs.map((faq) => (
+          {programFaqs.map((faq) => (
             <details key={faq.question} className="group px-5 py-4 md:px-6 md:py-5">
               <summary className="cursor-pointer list-none font-display text-base font-semibold text-navy marker:content-none md:text-lg [&::-webkit-details-marker]:hidden">
                 <span className="flex items-start justify-between gap-4">

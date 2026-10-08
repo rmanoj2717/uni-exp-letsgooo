@@ -6,8 +6,7 @@ const connectors = [
   "[&:last-child]:before:hidden",
   // Horizontal connector between steps in a row, hidden at the end of each row.
   "after:absolute after:left-10 after:top-4 after:hidden after:h-px after:w-[calc(100%-0.5rem)] after:bg-cyan/40 after:content-['']",
-  "sm:after:block sm:[&:nth-child(2n)]:after:hidden",
-  "lg:[&:nth-child(2n)]:after:block lg:[&:nth-child(3n)]:after:hidden",
+  "sm:after:block sm:max-lg:[&:nth-child(2n)]:after:hidden",
   "[&:last-child]:after:hidden",
 ].join(" ");
 
@@ -15,7 +14,7 @@ export function Score360Method() {
   return (
     <div>
       <h3 className="font-display text-xl font-bold text-navy md:text-2xl">How Score360 works</h3>
-      <ol className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-9">
+      <ol className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
         {score360Method.map((step, index) => (
           <li key={step.title} className={`relative pl-11 sm:pl-0 ${connectors}`}>
             <span

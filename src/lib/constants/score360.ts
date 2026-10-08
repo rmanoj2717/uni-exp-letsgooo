@@ -2,49 +2,48 @@ export const score360Name = "Score360";
 
 export const score360Tagline = "Master the Test, Maximize the Score";
 
-export const score360ShortDescription =
-  "Dedicated preparation built around diagnostic assessment, concept mastery, test strategy, practice, mock tests, and individual performance analysis.";
-
 export const score360PageDescription =
-  "Score360 combines diagnostic testing, targeted concept work, test-taking strategy, practice, mock exams, and individual performance analysis.";
+  "Score360 provides focused preparation for SAT, ACT, GRE, GMAT, IELTS, and TOEFL, with preparation shaped around the student's starting point, target exam, and application timeline.";
 
-export const score360SmallGroupNote = "Small groups do not exceed 5 students.";
-
-export const score360SmallGroupLimitNote =
-  "Small groups are limited to a maximum of 5 students.";
+export const score360Highlights = [
+  "Diagnostic-led",
+  "Personalised preparation",
+  "Practice & mock testing",
+  "Performance review",
+] as const;
 
 export const score360Method = [
   {
-    title: "Diagnostic Assessment",
-    description:
-      "The program begins with a full diagnostic test under realistic timed conditions. This establishes a Score360 baseline, including current score or band, section-wise performance, accuracy, speed, time management, and error patterns.",
+    title: "Understand",
+    description: "Identify the student's starting point and test requirements.",
   },
   {
-    title: "Concept Mastery",
-    description:
-      "Teaching focuses on the concepts that influence performance for the chosen test, covering the relevant SAT, ACT, GRE, GMAT, TOEFL, or IELTS skill areas.",
+    title: "Build",
+    description: "Strengthen concepts and test-taking strategy.",
   },
   {
-    title: "Test-taking Strategy",
-    description:
-      "Students learn how to take the test, including time allocation, question prioritisation, elimination techniques, handling difficult questions, section strategy, and computer-based test strategy.",
+    title: "Practise",
+    description: "Use targeted practice and mock testing.",
   },
   {
-    title: "Concept Testing",
-    description:
-      "After each major learning module, short tests check whether the concept has been mastered. Progress is tracked across accuracy, time per question, concept mastery, and recurring errors.",
-  },
-  {
-    title: "Mock Test Program",
-    description:
-      "Regular full-length mock tests increase in frequency and replicate the examination environment as closely as practical. Results are measured across overall score, section scores, accuracy, time management, and consistency.",
-  },
-  {
-    title: "Individual Performance Analysis",
-    description:
-      "Each student's score, accuracy, speed, strong areas, weak areas, and error categories are tracked throughout the program.",
+    title: "Review",
+    description: "Analyse performance and adjust preparation.",
   },
 ] as const;
+
+export const score360TestNames = ["SAT", "ACT", "GRE", "GMAT", "IELTS", "TOEFL"] as const;
+
+export const score360SupportThemes = [
+  { title: "Learn", description: "Concept development and targeted preparation" },
+  { title: "Practise", description: "Practice questions and mock-test experience" },
+  { title: "Improve", description: "Performance review and preparation adjustments" },
+] as const;
+
+/**
+ * INTERNAL REFERENCE ONLY. Commercial Score360 data from the plans workbook.
+ * Not rendered on the public website.
+ */
+export const score360SmallGroupLimit = 5;
 
 export const score360Tests = [
   {
@@ -86,54 +85,5 @@ export const score360Tests = [
     liveInteractions: "25–35",
     oneToOne: 32500,
     smallGroup: 17500,
-  },
-] as const;
-
-export const score360SupportGroups = [
-  {
-    title: "Learn",
-    items: [
-      "Study material and learning resources",
-      "Concept tests",
-      "Sectional tests",
-    ],
-  },
-  {
-    title: "Practise",
-    items: ["Full-length mock tests", "Weekly practice plan", "Doubt resolution"],
-  },
-  {
-    title: "Perform",
-    items: [
-      "Individual performance analysis",
-      "Time management training",
-      "Test-day strategy",
-      "Exam registration guidance",
-      "Progress updates",
-    ],
-  },
-] as const;
-
-/** Summary of the ranges already published in score360Tests, for the at-a-glance strip. */
-export const score360Glance = [
-  {
-    id: "tests",
-    headline: "6 tests",
-    detail: "SAT, ACT, GRE, GMAT, TOEFL, IELTS",
-  },
-  {
-    id: "format",
-    headline: "1:1 or small group",
-    detail: "Groups limited to 5 students",
-  },
-  {
-    id: "duration",
-    headline: "8–20 weeks",
-    detail: "Depending on test",
-  },
-  {
-    id: "interactions",
-    headline: "25–70 live interactions",
-    detail: "Depending on test",
   },
 ] as const;

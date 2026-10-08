@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Score360AtAGlance } from "@/components/test-prep/Score360AtAGlance";
 import { Score360Method } from "@/components/test-prep/Score360Method";
-import { Score360PricingTable } from "@/components/test-prep/Score360PricingTable";
 import { Score360Support } from "@/components/test-prep/Score360Support";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card } from "@/components/ui/Card";
@@ -13,15 +12,15 @@ import { testPrepOverviewLine } from "@/lib/constants/test-prep";
 import {
   score360Name,
   score360PageDescription,
-  score360SmallGroupLimitNote,
   score360Tagline,
+  score360TestNames,
 } from "@/lib/constants/score360";
 import { assetPath } from "@/lib/utils/asset-path";
 
 export const metadata: Metadata = {
   title: "Test Prep",
   description:
-    "Score360 is UniEXP Global's test-preparation program for SAT, ACT, GRE, GMAT, TOEFL, and IELTS, with 1:1 and small-group options.",
+    "Score360 is UniEXP Global's test-preparation program for SAT, ACT, GRE, GMAT, IELTS, and TOEFL, with 1:1 and small-group options.",
 };
 
 const TEST_PREP_IMAGE = assetPath("/images/focused_study_session_in_a_modern_workspace.png");
@@ -39,10 +38,8 @@ export default function TestPrepPage() {
               <h2 className="mt-3 font-display text-2xl font-bold text-navy md:text-3xl">
                 {score360Tagline}
               </h2>
-              <p className="mt-4 leading-relaxed text-muted">{score360PageDescription}</p>
-              <p className="mt-4 leading-relaxed text-muted">
-                UniEXP Global currently supports SAT, ACT, GRE, GMAT, TOEFL, and IELTS through
-                Score360, with both 1:1 and small-group preparation.
+              <p className="mt-4 leading-relaxed text-muted md:text-lg">
+                {score360PageDescription}
               </p>
               <div className="mt-6 h-1 w-12 rounded-full bg-cyan" aria-hidden />
             </div>
@@ -69,24 +66,32 @@ export default function TestPrepPage() {
 
           <div className="mt-10 rounded-2xl border border-cyan/15 bg-cyan-soft/30 p-5 md:mt-12 md:p-7">
             <h3 className="font-display text-xl font-bold text-navy md:text-2xl">
-              Score360 tests, duration, and pricing
+              Tests supported
             </h3>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
-              Each test includes a defined duration, live interactions, and a choice of 1:1 or
-              small-group preparation.
+            <p className="mt-2 text-sm leading-relaxed text-muted md:text-base">
+              We help determine which test is relevant before preparation begins.
             </p>
-            <div className="mt-5">
-              <Score360PricingTable variant="full" />
+            <ul className="mt-5 grid grid-cols-3 gap-2.5 sm:grid-cols-6 md:gap-3">
+              {score360TestNames.map((test) => (
+                <li
+                  key={test}
+                  className="rounded-xl bg-surface py-3.5 text-center font-display text-lg font-bold tracking-wide text-navy ring-1 ring-cyan/20 md:py-4 md:text-xl"
+                >
+                  {test}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-5 flex flex-col gap-4 border-t border-cyan/15 pt-5 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-sm font-medium text-navy md:text-base">
+                1:1 preparation and small-group options are available.
+              </p>
+              <CtaButton
+                source="test-prep-format"
+                label="Talk to a Counsellor"
+                variant="outline"
+                className="w-full shrink-0 sm:w-auto"
+              />
             </div>
-            <p className="mt-4 flex items-start gap-2.5 rounded-xl bg-surface px-4 py-3 text-sm font-medium text-navy ring-1 ring-cyan/25">
-              <span
-                className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-cyan text-[0.625rem] font-bold text-white"
-                aria-hidden
-              >
-                i
-              </span>
-              {score360SmallGroupLimitNote}
-            </p>
           </div>
 
           <div className="mt-10 md:mt-12">

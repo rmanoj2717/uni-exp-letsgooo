@@ -22,7 +22,7 @@ export const compass360Stages = [
   {
     title: "Navigate",
     description:
-      "Turn the findings into next steps, a 30-60-90 day action plan, and a longer-term roadmap.",
+      "Turn the findings into clear next steps and a longer-term roadmap.",
   },
 ] as const;
 
@@ -80,78 +80,26 @@ export const compass360Sessions = [
 ] as const;
 
 export const compass360AssessmentAreas = [
-  {
-    title: "Aptitude",
-    detail: "Numerical, verbal, logical, and abstract reasoning",
-  },
-  {
-    title: "Interests",
-    detail: "Subjects, activities, and career interests",
-  },
-  {
-    title: "Personality & Behaviour",
-    detail: "Working style, preferences, and behavioural patterns",
-  },
-  {
-    title: "Skills",
-    detail:
-      "Communication, critical thinking, problem-solving, creativity, leadership, and digital readiness",
-  },
-  {
-    title: "Aspirations & Experiences",
-    detail: "Goals, achievements, motivations, and relevant experiences",
-  },
-] as const;
-
-/** The nine fit dimensions, clustered into the themes a family tends to weigh together. */
-export const compass360FitGroups = [
-  { group: "Academic", dimensions: ["Academic Fit", "Course Fit"] },
-  { group: "Career", dimensions: ["Career Alignment", "Career Outcomes"] },
-  { group: "Environment", dimensions: ["University Environment", "Location Fit"] },
-  { group: "Cost & Funding", dimensions: ["Financial Fit", "Scholarship Potential"] },
-  { group: "Personal", dimensions: ["Student Preferences"] },
+  "Aptitude",
+  "Interests",
+  "Personality & Behaviour",
+  "Skills",
+  "Aspirations & Experiences",
 ] as const;
 
 export const compass360DevelopmentAreas = [
-  { area: "Academics", timeline: "Priorities based on the student’s current position" },
-  { area: "Research", timeline: "Around 6 months" },
-  { area: "Leadership", timeline: "Around 6–12 months" },
-  { area: "Communication", timeline: "Around 3–6 months" },
-  { area: "Career Exposure", timeline: "Around 3–6 months" },
-  { area: "University Research", timeline: "Around 3 months" },
-] as const;
-
-export const compass360Deliverables = [
-  "Student intake and profile analysis",
-  "Structured assessments",
-  "Professional counselling",
-  "Three live interactive sessions",
-  "Career and academic exploration",
-  "Course matching and university fit analysis",
-  "Preliminary university recommendations",
-  "Profile gap analysis",
-  "Individual Development Plan",
-  "Personalised action roadmap",
-  "Comprehensive Compass360 Report",
-  "Defined post-program support",
-] as const;
-
-export const compass360ReportContents = [
-  "Assessment and strengths summary",
-  "Career and academic directions",
-  "Course and university fit",
-  "Preliminary university recommendations",
-  "Profile gaps and development priorities",
-  "Individual Development Plan",
-  "30-60-90 day action plan",
-  "Longer-term development roadmap",
+  "Academics",
+  "Research",
+  "Leadership",
+  "Communication",
+  "Career Exposure",
+  "University Research",
 ] as const;
 
 export const compass360IdpChain = [
   "Where you are now",
   "What to develop",
   "What to do next",
-  "Suggested timeframe",
 ] as const;
 
 export const compass360Outputs = [
@@ -168,36 +116,7 @@ export const compass360Outputs = [
   {
     title: "Compass360 Report",
     summary:
-      "An approximately 15–25 page record of the findings, recommendations, and roadmap for the student and family.",
-  },
-] as const;
-
-/** The fourteen-day programme grouped into the five phases a family experiences. */
-export const compass360JourneyPhases = [
-  {
-    phase: "Understand",
-    days: "Days 1–4",
-    steps: ["Enrolment & onboarding", "Student intake", "Assessments"],
-  },
-  {
-    phase: "Discover",
-    days: "Days 4–6",
-    steps: ["Counsellor analysis", "Discover session"],
-  },
-  {
-    phase: "Match",
-    days: "Days 6–9",
-    steps: ["Course & university matching", "Match session"],
-  },
-  {
-    phase: "Plan",
-    days: "Days 9–12",
-    steps: ["IDP preparation", "Plan session"],
-  },
-  {
-    phase: "Deliver",
-    days: "Days 13–14",
-    steps: ["Final Compass360 Report"],
+      "A written record of the findings, recommendations, and roadmap for the student and family.",
   },
 ] as const;
 

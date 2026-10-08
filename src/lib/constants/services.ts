@@ -99,11 +99,11 @@ export const services: Service[] = [
     summary:
       "Test preparation through Score360 for SAT, ACT, GRE, GMAT, IELTS, and TOEFL, with 1:1 and small-group options.",
     description:
-      "Test preparation is available through Score360 for SAT, ACT, GRE, GMAT, IELTS, and TOEFL. Support combines diagnostic assessment, targeted preparation, practice tests, mock exams, and test strategy.",
+      "Score360 provides focused preparation for SAT, ACT, GRE, GMAT, IELTS, and TOEFL through 1:1 and small-group options.",
     helpWith: [
-      "SAT, ACT, GRE, GMAT, IELTS and TOEFL preparation",
-      "1:1 and small-group options",
-      "Test planning aligned with application timelines",
+      "Test selection and preparation planning",
+      "Targeted preparation and mock testing",
+      "Preparation aligned with university timelines",
     ],
     icon: "test",
   },

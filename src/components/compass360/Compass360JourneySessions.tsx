@@ -17,6 +17,9 @@ export function Compass360JourneySessions() {
             Compass360 moves through five stages, supported by three live counselling sessions
             where students make sense of the findings and decide what to do next.
           </p>
+          <p className="mt-3 leading-relaxed text-white/65">
+            Compass360 is designed as a focused program completed over approximately two weeks.
+          </p>
           <div className="mt-6 h-1 w-12 rounded-full bg-cyan-bright" aria-hidden />
         </header>
 
@@ -68,9 +71,6 @@ export function Compass360JourneySessions() {
                   {session.title} session
                 </h4>
                 <p className="mt-1.5 text-sm leading-relaxed text-white/70">{session.focus}</p>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.08em] text-white/55">
-                  45–60 minutes
-                </p>
               </li>
             ))}
           </ol>

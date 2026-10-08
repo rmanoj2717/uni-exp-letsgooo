@@ -1,26 +1,11 @@
 import { Container } from "@/components/ui/Container";
 import {
-  compass360Deliverables,
   compass360DevelopmentAreas,
   compass360IdpChain,
   compass360Outputs,
-  compass360ReportContents,
 } from "@/lib/constants/compass360";
 
 const listLabel = "font-display text-xs font-bold uppercase tracking-[0.12em] text-navy-light";
-
-function BulletList({ items }: { items: readonly string[] }) {
-  return (
-    <ul className="mt-4 space-y-2">
-      {items.map((item) => (
-        <li key={item} className="flex items-start gap-2.5">
-          <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-cyan" aria-hidden />
-          <span className="text-sm leading-relaxed text-navy">{item}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export function Compass360PlanDeliverables() {
   return (
@@ -69,33 +54,26 @@ export function Compass360PlanDeliverables() {
           </ol>
         </div>
 
-        <p className="mt-6 max-w-3xl leading-relaxed text-muted">
-          The Individual Development Plan is tailored to the student. It identifies what to work on,
-          what to do next, and a suggested timeframe. Examples are indicative. Priorities and
-          timelines vary by student.
-        </p>
+        <div className="mt-6 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center lg:gap-10">
+          <p className="max-w-xl leading-relaxed text-muted">
+            The Individual Development Plan is tailored to the student. It identifies what to work
+            on and what to do next. Priorities vary by student.
+          </p>
 
-        <ul className="mt-6 grid max-w-4xl overflow-hidden rounded-2xl bg-surface sm:grid-cols-2">
-          {compass360DevelopmentAreas.map((item, index) => {
-            const last = index === compass360DevelopmentAreas.length - 1;
-            const lastRow = index >= compass360DevelopmentAreas.length - 2;
-            const tintedRow = index === 2 || index === 3;
-
-            return (
-              <li
-                key={item.area}
-                className={`flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-border/80 px-5 py-3.5 md:px-6 ${
-                  last ? "border-b-0" : ""
-                } ${lastRow ? "sm:border-b-0" : ""} ${tintedRow ? "sm:bg-cyan-soft/40" : ""}`}
-              >
-                <span className="font-display text-[0.9375rem] font-bold text-navy">
-                  {item.area}
-                </span>
-                <span className="text-[0.8125rem] leading-snug text-muted">{item.timeline}</span>
-              </li>
-            );
-          })}
-        </ul>
+          <div>
+            <p className={listLabel}>Areas a plan may cover</p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {compass360DevelopmentAreas.map((area) => (
+                <li
+                  key={area}
+                  className="rounded-full bg-surface px-3.5 py-1.5 text-sm font-semibold text-navy ring-1 ring-border/70"
+                >
+                  {area}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
         <div className="mt-12">
           <h3 className="font-display text-xl font-bold text-navy md:text-2xl">
@@ -128,19 +106,6 @@ export function Compass360PlanDeliverables() {
                 </li>
               ))}
             </ol>
-
-            <div className="border-t border-border/70 bg-surface px-5 py-6 md:px-7 md:py-7">
-              <div className="grid gap-8 lg:grid-cols-2 lg:gap-0">
-                <div className="border-b border-border/70 pb-8 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-10">
-                  <h4 className={listLabel}>Included in Compass360</h4>
-                  <BulletList items={compass360Deliverables} />
-                </div>
-                <div className="lg:pl-10">
-                  <h4 className={listLabel}>Your report brings together</h4>
-                  <BulletList items={compass360ReportContents} />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </Container>

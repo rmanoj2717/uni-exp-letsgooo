@@ -1,4 +1,7 @@
-import type { PricingFaq } from "@/types";
+/**
+ * INTERNAL REFERENCE ONLY. Commercial program data from the plans workbook.
+ * Not rendered on the public website; public program copy lives in `programs.ts`.
+ */
 
 export function formatINR(amount: number): string {
   return new Intl.NumberFormat("en-IN", {
@@ -251,26 +254,3 @@ export const exclusiveServices = [
     price: null,
   },
 ] as const;
-
-export const pricingFaqs: PricingFaq[] = [
-  {
-    question: "What is the difference between Self-paced and Bundled Programs?",
-    answer:
-      "Self-paced Programs run for a defined short-term period, while Bundled Programs provide longer-term guidance over two to four years. Both include live counsellor and mentor interactions, with the level and duration depending on the program.",
-  },
-  {
-    question: "Which Self-paced Program is appropriate for my student?",
-    answer:
-      "Explorer is designed primarily for Grades 8–10 and early undergraduate students, Builder for Grades 10–11 and mid-undergraduate students, and Achiever for Grades 11–12 and later undergraduate students. We can help families choose based on the student's current stage and goals.",
-  },
-  {
-    question: "Is test preparation available separately?",
-    answer:
-      "Yes. Score360 provides dedicated preparation for SAT, ACT, GRE, GMAT, TOEFL, and IELTS, with both 1:1 and small-group options.",
-  },
-  {
-    question: "Can Compass360 be taken separately?",
-    answer:
-      "Yes. Compass360 is a focused two-week program for student discovery, academic direction, career exploration, university fit, and development planning.",
-  },
-];

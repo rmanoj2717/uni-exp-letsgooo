@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { CtaButton } from "@/components/cta/CtaButton";
 import { PathwayLines } from "@/components/decorative/PathwayLines";
 import { Container } from "@/components/ui/Container";
@@ -8,7 +6,7 @@ import { compass360Disclaimer } from "@/lib/constants/compass360";
 export function Compass360Close() {
   return (
     <>
-      <section className="bg-off-white pathway-bg py-12 md:py-14">
+      <section className="bg-surface py-12 md:py-14">
         <Container>
           <header className="max-w-2xl">
             <p className="eyebrow text-navy-light">The Compass360 difference</p>
@@ -19,7 +17,7 @@ export function Compass360Close() {
           </header>
 
           <div className="mt-8 grid gap-5 lg:grid-cols-2 lg:gap-6">
-            <article className="rounded-2xl border border-border/70 bg-surface p-5 md:p-7">
+            <article className="rounded-2xl border border-border/70 bg-off-white p-5 md:p-7">
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-navy-light">
                 Traditional counselling often begins with
               </p>
@@ -39,32 +37,14 @@ export function Compass360Close() {
             </article>
           </div>
 
-          <div className="mt-10 grid gap-8 border-t border-border/60 pt-9 lg:grid-cols-2 lg:gap-14">
-            <div>
-              <h3 className="font-display text-lg font-bold text-navy">
-                A partnership with the family
-              </h3>
-              <p className="mt-3 leading-relaxed text-muted">
-                Parents provide context. Students provide the voice. Counsellors provide the
-                perspective.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-display text-lg font-bold text-navy">Post-program support</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                After the report is delivered, families have a defined period to clarify the
-                recommendations and Individual Development Plan. Additional live counselling is not
-                included. Students who want ongoing support can continue with UniEXP Global&apos;s{" "}
-                <Link
-                  href="/services"
-                  className="font-semibold text-navy underline decoration-cyan/50 decoration-2 underline-offset-2 transition-colors hover:text-navy-light"
-                >
-                  longer-term counselling services
-                </Link>
-                .
-              </p>
-            </div>
+          <div className="mt-10 grid gap-3 border-t border-border/60 pt-9 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:items-baseline md:gap-10">
+            <h3 className="font-display text-lg font-bold text-navy md:text-xl">
+              A partnership with the family
+            </h3>
+            <p className="leading-relaxed text-muted md:text-lg">
+              Parents provide context. Students provide the voice. Counsellors provide the
+              perspective.
+            </p>
           </div>
         </Container>
       </section>

@@ -7,8 +7,6 @@ import { Compass360JourneySessions } from "@/components/compass360/Compass360Jou
 import { Compass360Pillars } from "@/components/compass360/Compass360Pillars";
 import { Compass360PlanDeliverables } from "@/components/compass360/Compass360PlanDeliverables";
 import { Compass360PromiseAudience } from "@/components/compass360/Compass360PromiseAudience";
-import { Compass360Timeline } from "@/components/compass360/Compass360Timeline";
-
 export const metadata: Metadata = {
   title: "Compass360",
   description:
@@ -24,7 +22,6 @@ export default function Compass360Page() {
       <Compass360JourneySessions />
       <Compass360AssessmentFit />
       <Compass360PlanDeliverables />
-      <Compass360Timeline />
       <Compass360Close />
     </>
   );

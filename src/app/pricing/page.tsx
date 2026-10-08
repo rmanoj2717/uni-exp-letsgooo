@@ -9,17 +9,17 @@ import { PricingSelfPaced } from "@/components/pricing/PricingSelfPaced";
 import { PricingUnsure } from "@/components/pricing/PricingUnsure";
 
 export const metadata: Metadata = {
-  title: "Programs & Pricing",
+  title: "Programs",
   description:
-    "Self-paced, bundled, and exclusive UniEXP Global programs, plus exclusive services. Public prices for Explorer, Builder, Achiever, Scholar, Dreamer, Visionary, Compass360, and Score360.",
+    "Explore UniEXP Global programs designed for different stages of academic, profile, admissions, and test preparation.",
 };
 
 export default function PricingPage() {
   return (
     <>
       <PageHeader
-        title="Programs & Pricing"
-        subtitle="Choose from focused short-term programs, longer-term bundled guidance, and specialist programs based on the student's stage and goals."
+        title="Programs"
+        subtitle="Explore UniEXP Global programs designed for different stages of academic, profile, admissions, and test preparation."
       />
 
       <PricingFamilyRail />
